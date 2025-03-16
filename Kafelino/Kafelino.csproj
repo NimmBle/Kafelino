@@ -1,0 +1,92 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-Kafelino-0035a803-aae4-4b72-9ff3-53028b5d0912</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.11" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Migrations\" />
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-grid.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-grid.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-grid.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-grid.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-grid.rtl.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-grid.rtl.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-grid.rtl.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-grid.rtl.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-reboot.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-reboot.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-reboot.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-reboot.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-reboot.rtl.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-reboot.rtl.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-reboot.rtl.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-reboot.rtl.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-utilities.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-utilities.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-utilities.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-utilities.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-utilities.rtl.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-utilities.rtl.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-utilities.rtl.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-utilities.rtl.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui.rtl.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui.rtl.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui.rtl.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui.rtl.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\themes\bootstrap\bootstrap.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\themes\bootstrap\bootstrap.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\themes\bootstrap\bootstrap.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\themes\bootstrap\bootstrap.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\themes\bootstrap\bootstrap.rtl.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\themes\bootstrap\bootstrap.rtl.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\themes\bootstrap\bootstrap.rtl.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\themes\bootstrap\bootstrap.rtl.min.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\bootstrap.bundle.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\bootstrap.bundle.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\bootstrap.bundle.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\bootstrap.bundle.min.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\bootstrap.esm.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\bootstrap.esm.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\bootstrap.esm.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\bootstrap.esm.min.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\bootstrap.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\bootstrap.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\bootstrap.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\bootstrap.min.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\coreui.bundle.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\coreui.bundle.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\coreui.bundle.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\coreui.bundle.min.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\coreui.esm.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\coreui.esm.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\coreui.esm.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\coreui.esm.min.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\coreui.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\coreui.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\coreui.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\coreui.min.js.map" />
+  </ItemGroup>
+
+</Project>
