@@ -26,4 +26,6 @@ public class Product
     public ICollection<TasteNote> TasteNotes { get; set; } = new HashSet<TasteNote>();
 
     public ICollection<OrderProduct> OrderProducts { get; set; } = new HashSet<OrderProduct>();
+    
+    public ICollection<User> Users { get; set; } = new HashSet<User>();
 }

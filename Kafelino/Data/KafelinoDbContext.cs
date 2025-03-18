@@ -18,6 +18,8 @@ namespace Kafelino.Data
         
         public DbSet<Product> Products { get; set; }
         
+        public DbSet<Cart> Carts { get; set; }
+        
         public DbSet<TasteNote> TasteNotes { get; set; }
         
         public DbSet<ProductTasteNote> ProductTasteNotes { get; set; }
@@ -41,6 +43,10 @@ namespace Kafelino.Data
                 .HasMany(p => p.OrderProducts)
                 .WithOne(o => o.Product);
             
+            builder.Entity<Product>()
+                .HasMany(p => p.Users)
+                .WithMany(u => u.Products)
+                .UsingEntity<Cart>();
             
             // Конфигурация на Order модела
             builder.Entity<Order>()

@@ -1,4 +1,3 @@
-using System.ComponentModel.DataAnnotations;
 using Kafelino.Domain;
 
 namespace Kafelino.Models.Products;

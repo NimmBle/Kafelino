@@ -27,6 +27,7 @@ namespace Kafelino.Controllers
         public async Task<IActionResult> Index()
         {
             var products = await _context.Products
+                .Where(p => p.IsDeleted == false && p.Quantity > 0)
                 .Include(p => p.TasteNotes)
                 .Include(p => p.Weight)
                 .ToListAsync();
@@ -39,13 +40,30 @@ namespace Kafelino.Controllers
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            var user = await _userManager.GetUserAsync(User);
+            
             if (id == null)
             {
                 return NotFound();
             }
-
+            
             var product = await _context.Products
-                .FirstOrDefaultAsync(m => m.ProductId == id);
+                .Where(p => p.ProductId == id)
+                .Select(p => new ProductDetailsViewModel
+                {
+                    ProductId = p.ProductId,
+                    Name = p.Name,
+                    Description = p.Description,
+                    ImageUrl = p.ImageUrl,
+                    Price = p.Price,
+                    Quantity = p.Quantity,
+                    Brand = p.Brand,
+                    Weights = p.Weight,
+                    TasteNotes = p.TasteNotes,
+                    ProductInCart = p.Users.Any(u => u.Id == user.Id)
+                })
+                .FirstOrDefaultAsync();
+            
             if (product == null)
             {
                 return NotFound();
@@ -55,6 +73,7 @@ namespace Kafelino.Controllers
         }
 
         // GET: Products/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             var tasteNotes = _context.TasteNotes.ToList();
@@ -72,6 +91,7 @@ namespace Kafelino.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CreateProductInputModel inputModel)
         {
@@ -111,6 +131,7 @@ namespace Kafelino.Controllers
         }
 
         // GET: Products/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id)
         {
             var tasteNotes = _context.TasteNotes.ToList();
@@ -146,6 +167,7 @@ namespace Kafelino.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id, EditProductInputModel inputModel)
         {
@@ -233,14 +255,18 @@ namespace Kafelino.Controllers
         {
             var user = await this._userManager.GetUserAsync(User);
 
-            var productsInCart = user.Cart.Split("; ").Where(p => p != "").ToList();
-
-            if (!productsInCart.Contains(productId.ToString()))
+            if (!user.Products.Any(p => p.ProductId == productId))
             {
-                productsInCart.Add(productId.ToString());
+                var product = await _context.Products.FirstOrDefaultAsync(p => p.ProductId == productId);
+                user.Products.Add(product);
             }
-        
-            user.Cart = string.Join("; ", productsInCart);
+            else
+            {
+                var productInCart = _context.Carts
+                    .Where(c => c.ProductId == productId && c.UserId == user.Id)
+                    .FirstOrDefault();
+                productInCart.Quantity++;
+            }
 
             await this._context.SaveChangesAsync();
 
@@ -249,35 +275,92 @@ namespace Kafelino.Controllers
         
         [HttpGet]
         [Authorize]
-        public async Task<IActionResult> RemoveFromCart(string id)
+        public async Task<IActionResult> RemoveFromCart(int id)
         {
             var user = await this._userManager.GetUserAsync(User);
 
-            var products = user.Cart.Split("; ").Where(p => p != "").ToList();
-
-            products.Remove(id);
-
-            user.Cart = string.Join("; ", products);
+            var productInCart = _context.Carts
+                .Where(c => c.ProductId == id && c.UserId == user.Id)
+                .FirstOrDefault();
+            
+            _context.Carts.Remove(productInCart);
 
             await this._context.SaveChangesAsync();
 
-            return RedirectToAction("Details", "Products", new { Id = id });
+            return RedirectToAction(nameof(Cart));
         }
+        
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> AddQuantity(int id)
+        {
+            var user = await this._userManager.GetUserAsync(User);
 
+            var productInCart = _context.Carts
+                .Include(c => c.Product)
+                .Where(c => c.ProductId == id && c.UserId == user.Id)
+                .FirstOrDefault();
+
+            if (productInCart.Product.Quantity <= productInCart.Quantity)
+            {
+                return RedirectToAction(nameof(Cart));
+            }
+            
+            productInCart.Quantity++;
+
+            await this._context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Cart));
+        }
+        
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> RemoveQuantity(int id)
+        {
+            var user = await this._userManager.GetUserAsync(User);
+
+            var productInCart = _context.Carts
+                .Where(c => c.ProductId == id && c.UserId == user.Id)
+                .FirstOrDefault();
+            
+            if (productInCart.Quantity == 1)
+            {
+                _context.Carts.Remove(productInCart);   
+            }
+            else
+            {
+                productInCart.Quantity--;
+            }
+
+            await this._context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Cart));
+        }
+        
         [HttpGet]
         [Authorize]
         public async Task<IActionResult> Cart()
         {
             var user = await this._userManager.GetUserAsync(User);
-
-            var products = user.Cart.Split("; ").Where(p => p != "").ToList();
-
             
-            var productInCart = await _context.Products
-                .Where(p => products.Contains(p.ProductId.ToString()))
+            var productsInCart = await _context.Carts
+                .Where(p => p.UserId == user.Id)
+                .Select(c => new ProductListingViewModel
+                {
+                    ProductId = c.ProductId,
+                    Name = c.Product.Name,
+                    Description = c.Product.Description,
+                    ImageUrl = c.Product.ImageUrl,
+                    Price = c.Product.Price,
+                    Quantity = c.Quantity,
+                    Brand = c.Product.Brand,
+                    Weight = c.Product.Weight,
+                    TasteNotes = c.Product.TasteNotes
+                    
+                })
                 .ToListAsync();
             
-            return View(productInCart);
+            return View(productsInCart);
         }
         
         private bool ProductExists(int id)

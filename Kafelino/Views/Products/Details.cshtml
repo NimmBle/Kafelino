@@ -1,4 +1,4 @@
-@model Kafelino.Domain.Product
+@model Kafelino.Models.Products.ProductDetailsViewModel
 
 @{
     ViewData["Title"] = "Details";
@@ -51,10 +51,20 @@
     
     @if (this.User.Identity.IsAuthenticated)
     {
-        <form method="post" asp-action="AddToCart" asp-route-productId="@Model.ProductId">
-            <button type="submit" class="btn btn-info mt-20">Добави в количката</button>
-        </form>
+        @if (Model.ProductInCart)
+        {
+            <form method="get" asp-action="RemoveFromCart" asp-route-id="@Model.ProductId">
+                <button class="btn btn-main mt-20" type="submit">Премахни от количката</button>
+            </form>
+        }
+        @if (!Model.ProductInCart)
+        {
+            <form method="post" asp-action="AddToCart" asp-route-productId="@Model.ProductId">
+                <button type="submit" class="btn btn-info mt-20">Добави в количката</button>
+            </form>
+        }
     }
+    
     
 </div>
 <div>

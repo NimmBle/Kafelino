@@ -28,35 +28,27 @@ public class OrdersController : Controller
     {
         var user = await this._userManager.GetUserAsync(User);
 
-        var productIds = user.Cart
-            .Split("; ")
-            .Where(p => p != "")
-            .Select(int.Parse);
-
         var model = new CreateOrderInputModel();
-
-        foreach (var productId in productIds)
-        {
-            var product = await this._context.Products
-                .Where(p => p.ProductId == productId)
-                .Select(p => new ProductDetailsViewModel()
+        
+            var products = await this._context.Carts
+                .Where(c => c.UserId == user.Id)
+                .Select(c => new ProductDetailsViewModel()
                 {
-                    ProductId = p.ProductId,
-                    Name = p.Name,
-                    Description = p.Description,
-                    ImageUrl = p.ImageUrl,
-                    Price = p.Price,
-                    Quantity = p.Quantity,
-                    Brand = p.Brand,
-                    Weights = p.Weight,
-                    TasteNotes = p.TasteNotes,
+                    ProductId = c.ProductId,
+                    Name = c.Product.Name,
+                    Description = c.Product.Description,
+                    Quantity = c.Quantity,
+                    ImageUrl = c.Product.ImageUrl,
+                    Price = c.Product.Price,
+                    Brand = c.Product.Brand,
+                    Weights = c.Product.Weight,
+                    TasteNotes = c.Product.TasteNotes,
                 })
-                .FirstOrDefaultAsync();
+                .ToListAsync();
 
-            model.Products.Add(product);
+            model.Products = products;
 
-            model.TotalPrice += product.Price;
-        }
+            model.TotalPrice += products.Select(p => p.Price * p.Quantity).Sum();
 
         return View(model);
     }
@@ -66,11 +58,6 @@ public class OrdersController : Controller
     public async Task<IActionResult> Create(CreateOrderInputModel input)
     {
         var user = await this._userManager.GetUserAsync(User);
-
-        var productIds = user.Cart
-            .Split("; ")
-            .Where(p => p != "")
-            .Select(int.Parse);
 
         var order = new Order()
         {
@@ -83,36 +70,28 @@ public class OrdersController : Controller
         await this._context.Orders.AddAsync(order);
         await this._context.SaveChangesAsync();
 
-        foreach (var id in productIds)
-        {
-            var product = await this._context.Products
-                .SingleOrDefaultAsync(p => p.ProductId == id);
+        var orderedProducts = await this._context.Carts.
+            Where(c => c.UserId == user.Id).ToListAsync();
 
-            product.Quantity--;
+        foreach (var product in orderedProducts)
+        {
+            var item = await _context.Products.FirstOrDefaultAsync(p => p.ProductId == product.ProductId);
+            
+            item.Quantity -= product.Quantity;
 
             if (product.Quantity == 0)
             {
-                await this._context.Users.ForEachAsync(u =>
-                {
-                    var products = u.Cart
-                        .Split("; ")
-                        .Where(p => p != "" && p != id.ToString())
-                        .ToList();
-
-                    u.Cart = string.Join("; ", products);
-                });
+                this._context.Carts.Remove(product);
             }
-
+            
             var orderProduct = new OrderProduct()
             {
                 OrderId = order.OrderId,
-                ProductId = id,
+                ProductId = product.ProductId,
             };
-
-            await this._context.OrderProducts.AddAsync(orderProduct);
         }
-
-        user.Cart = "";
+        
+        user.Products.Clear();
 
         await this._context.SaveChangesAsync();
 
