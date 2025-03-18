@@ -1,5 +1,4 @@
-using Kafelino.Data.Migrations;
-using Kafelino.Domain;
+using System.ComponentModel.DataAnnotations;
 
 namespace Kafelino.Models.Products;
 
@@ -13,7 +12,8 @@ public class EditProductInputModel
     
     public IFormFile? Image { get; set; }
 
-    public string ImageUrl { get; set; }
+    [Required(ErrorMessage = "Полето е задължително")]
+    public string? ImageUrl { get; set; }
     
     public decimal Price { get; set; }
     
@@ -22,4 +22,7 @@ public class EditProductInputModel
     public string Brand { get; set; }
     
     public ICollection<int> TasteNoteIds { get; set; } = new List<int>();
+    
+    [Required(ErrorMessage = "Полето е задължително. Изберете разфасофка")]
+    public int WeightId { get; set; }
 }

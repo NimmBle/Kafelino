@@ -20,7 +20,8 @@ public class Product
     
     public DateTime CreatedOn { get; set; } = DateTime.Now;
     
-    public ICollection<Weight> Weights { get; set; } = new HashSet<Weight>();
+    public int WeightId { get; set; }
+    public Weight Weight { get; set; }
     
     public ICollection<TasteNote> TasteNotes { get; set; } = new HashSet<TasteNote>();
 

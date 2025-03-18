@@ -5,12 +5,24 @@
       "PackagePath": "staticwebassets\\Kafelino.u58xwzvxuo.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\1a4bc15b-b930-46b8-a100-e5ef7cf2e16e.png",
+      "PackagePath": "staticwebassets\\Images\\1a4bc15b-b930-46b8-a100-e5ef7cf2e16e.png"
+    },
+    {
       "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\384b3d01-55fc-47a7-9261-a899f8dd4f7a.svg",
       "PackagePath": "staticwebassets\\Images\\384b3d01-55fc-47a7-9261-a899f8dd4f7a.svg"
     },
     {
       "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\4c05501d-1013-4213-95f7-b82e01b09da1.svg",
       "PackagePath": "staticwebassets\\Images\\4c05501d-1013-4213-95f7-b82e01b09da1.svg"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\54445053-d86a-4e2e-a021-d36234fd519f.webp",
+      "PackagePath": "staticwebassets\\Images\\54445053-d86a-4e2e-a021-d36234fd519f.webp"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\57e02211-9939-4ad9-9614-cc6b6399652c.png",
+      "PackagePath": "staticwebassets\\Images\\57e02211-9939-4ad9-9614-cc6b6399652c.png"
     },
     {
       "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\5aa8d002-e9c9-4967-9079-2c01c6ec1730.png",
@@ -21,12 +33,24 @@
       "PackagePath": "staticwebassets\\Images\\7cfa1729-9d53-42d4-9d7a-fa4fcbdd06e7.png"
     },
     {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\808dbeab-4b97-49be-bff3-e8998f4ab9c6.png",
+      "PackagePath": "staticwebassets\\Images\\808dbeab-4b97-49be-bff3-e8998f4ab9c6.png"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\bf30a737-7662-4eb5-b5fc-d527a62dd60e.png",
+      "PackagePath": "staticwebassets\\Images\\bf30a737-7662-4eb5-b5fc-d527a62dd60e.png"
+    },
+    {
       "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\c6546dad-40ee-4be3-854e-2f6ee5d2c47b.png",
       "PackagePath": "staticwebassets\\Images\\c6546dad-40ee-4be3-854e-2f6ee5d2c47b.png"
     },
     {
       "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\c8df9676-91fc-4aac-9306-cbb15b0f5169.webp",
       "PackagePath": "staticwebassets\\Images\\c8df9676-91fc-4aac-9306-cbb15b0f5169.webp"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\d56fb965-2083-4848-929e-ab03e1c9631b.png",
+      "PackagePath": "staticwebassets\\Images\\d56fb965-2083-4848-929e-ab03e1c9631b.png"
     },
     {
       "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\d6af49e3-4b06-4e71-84f4-54d819b186ff.svg",
@@ -227,262 +251,6 @@
     {
       "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-grid.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-grid.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-grid.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-grid.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-grid.min.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-grid.min.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-grid.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-grid.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-grid.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-grid.rtl.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-grid.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-grid.rtl.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-grid.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-grid.rtl.min.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-grid.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-grid.rtl.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-reboot.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-reboot.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-reboot.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-reboot.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-reboot.min.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-reboot.min.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-reboot.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-reboot.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-reboot.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-reboot.rtl.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-reboot.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-reboot.rtl.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-reboot.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-reboot.rtl.min.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-reboot.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-reboot.rtl.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-utilities.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-utilities.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-utilities.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-utilities.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-utilities.min.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-utilities.min.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-utilities.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-utilities.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-utilities.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-utilities.rtl.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-utilities.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-utilities.rtl.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-utilities.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-utilities.rtl.min.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui-utilities.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui-utilities.rtl.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui.min.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui.min.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui.rtl.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui.rtl.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui.rtl.min.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\coreui.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\coreui.rtl.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\themes\\bootstrap\\bootstrap.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\themes\\bootstrap\\bootstrap.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\themes\\bootstrap\\bootstrap.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\themes\\bootstrap\\bootstrap.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\themes\\bootstrap\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\themes\\bootstrap\\bootstrap.min.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\themes\\bootstrap\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\themes\\bootstrap\\bootstrap.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\themes\\bootstrap\\bootstrap.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\themes\\bootstrap\\bootstrap.rtl.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\themes\\bootstrap\\bootstrap.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\themes\\bootstrap\\bootstrap.rtl.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\themes\\bootstrap\\bootstrap.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\themes\\bootstrap\\bootstrap.rtl.min.css"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\css\\themes\\bootstrap\\bootstrap.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\css\\themes\\bootstrap\\bootstrap.rtl.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\bootstrap.bundle.js",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\bootstrap.bundle.js"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\bootstrap.bundle.js.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\bootstrap.bundle.min.js"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\bootstrap.bundle.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\bootstrap.bundle.min.js.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\bootstrap.esm.js",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\bootstrap.esm.js"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\bootstrap.esm.js.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\bootstrap.esm.js.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\bootstrap.esm.min.js",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\bootstrap.esm.min.js"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\bootstrap.esm.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\bootstrap.esm.min.js.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\bootstrap.js",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\bootstrap.js"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\bootstrap.js.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\bootstrap.js.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\bootstrap.min.js",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\bootstrap.min.js"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\bootstrap.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\bootstrap.min.js.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\coreui.bundle.js",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\coreui.bundle.js"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\coreui.bundle.js.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\coreui.bundle.js.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\coreui.bundle.min.js",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\coreui.bundle.min.js"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\coreui.bundle.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\coreui.bundle.min.js.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\coreui.esm.js",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\coreui.esm.js"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\coreui.esm.js.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\coreui.esm.js.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\coreui.esm.min.js",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\coreui.esm.min.js"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\coreui.esm.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\coreui.esm.min.js.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\coreui.js",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\coreui.js"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\coreui.js.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\coreui.js.map"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\coreui.min.js",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\coreui.min.js"
-    },
-    {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\coreui\\js\\coreui.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\coreui\\js\\coreui.min.js.map"
     },
     {
       "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",

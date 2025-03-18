@@ -111,9 +111,593 @@ namespace Kafelino.Data.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
+                    b.Property<int>("WeightId")
+                        .HasColumnType("int");
+
                     b.HasKey("ProductId");
 
+                    b.HasIndex("WeightId");
+
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            ProductId = 1,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(8972),
+                            Description = "Тази изключителна партида Гейша идва от прочутата ферма Volcán Azul, която редовно се отличава като победител в конкурса Cup of Excellence Costa Rica. Обработена чрез натурален метод, тази партида разкрива елегантността и сложността, които правят Гейша толкова ценен сорт. Ароматът е фин и цветен, водещ към живи вкусове на жасмин и сочна папая. Ябълково-цитрусова киселинност придава свеж баланс, докато естествената сладост се запазва дълго, оставяйки изтънчен и продължителен вкус на кафява захар.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/vulkan-azul-geisha.jpg",
+                            IsDeleted = false,
+                            Name = "Вулкан Азул | Гейша",
+                            Price = 26.00m,
+                            Quantity = 95,
+                            WeightId = 2
+                        },
+                        new
+                        {
+                            ProductId = 2,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9046),
+                            Description = "Тази уникална партида е резултат от иновативния подход на Хайро Арсила, който използва плодова ферментация за обогатяване на вкусовия профил. Кафето впечатлява с нотки на праскова, кокос и ванилия, създавайки комплексен и запомнящ се вкус.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/jairo-arsila-fruit-fermentation.jpg",
+                            IsDeleted = false,
+                            Name = "Хайро Арсила | Плодова ферментация",
+                            Price = 24.00m,
+                            Quantity = 120,
+                            WeightId = 4
+                        },
+                        new
+                        {
+                            ProductId = 3,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9050),
+                            Description = "Отгледано в региона Уиля, Колумбия, това кафе от сорта Таби предлага богат вкус с изразени нотки на боровинки, грозде и натурален шоколад. Идеално за любителите на плодови и сладки профили.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/alonso-bustos-tabi.jpg",
+                            IsDeleted = false,
+                            Name = "Алонсо Бустос | Таби",
+                            Price = 32.00m,
+                            Quantity = 75,
+                            WeightId = 3
+                        },
+                        new
+                        {
+                            ProductId = 4,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9063),
+                            Description = "Тази партида от региона Гуджи в Етиопия се отличава с флорални аромати и вкусове на жасмин, праскова и карамел. Перфектен избор за тези, които търсят елегантно и балансирано кафе.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/hambela-guji-ethiopia.jpg",
+                            IsDeleted = false,
+                            Name = "Хамбела Гуджи, Етиопия",
+                            Price = 28.00m,
+                            Quantity = 105,
+                            WeightId = 1
+                        },
+                        new
+                        {
+                            ProductId = 5,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9068),
+                            Description = "Кафе от региона Матагалпа в Никарагуа, което впечатлява с плътно тяло и вкусови нотки на карамел, зряла череша и черен чай.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/finca-san-isidro-catuai.jpg",
+                            IsDeleted = false,
+                            Name = "Финка Сан Исидро | Катуай",
+                            Price = 19.00m,
+                            Quantity = 85,
+                            WeightId = 4
+                        },
+                        new
+                        {
+                            ProductId = 6,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9071),
+                            Description = "Традиционно кенийско кафе с интензивен аромат и вкусове на касис, цитрусови плодове и черен чай. Отличен избор за филтърно приготвяне.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/kenya-karimiru-sl28-sl34.jpg",
+                            IsDeleted = false,
+                            Name = "Кения Каримиру | SL28 & SL34",
+                            Price = 28.00m,
+                            Quantity = 95,
+                            WeightId = 3
+                        },
+                        new
+                        {
+                            ProductId = 7,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9078),
+                            Description = "Кафе от планините на Гватемала с комплексен профил и вкусове на какао, карамел и портокалова кора.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/guatemala-junacan-pacamara.jpg",
+                            IsDeleted = false,
+                            Name = "Гватемала Хунакан | Пакмара",
+                            Price = 25.00m,
+                            Quantity = 110,
+                            WeightId = 2
+                        },
+                        new
+                        {
+                            ProductId = 8,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9081),
+                            Description = "Традиционно бразилско кафе със сладък и балансиран вкус на шоколад, лешник и карамел. Перфектно за еспресо.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/brazil-santos-natural.jpg",
+                            IsDeleted = false,
+                            Name = "Бразилия Сантош | Натурален",
+                            Price = 18.00m,
+                            Quantity = 90,
+                            WeightId = 1
+                        },
+                        new
+                        {
+                            ProductId = 9,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9093),
+                            Description = "Легендарно кафе от региона Йиргачеф в Етиопия, което предлага флорални нотки, цитрусови плодове и медена сладост.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/ethiopia-sidamo-yirgacheffe.jpg",
+                            IsDeleted = false,
+                            Name = "Етиопия Сидамо | Yirgacheffe",
+                            Price = 26.00m,
+                            Quantity = 80,
+                            WeightId = 3
+                        },
+                        new
+                        {
+                            ProductId = 10,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9097),
+                            Description = "Плодово и сладко кафе с нотки на сушена слива, лешник и мед. Един от най-добрите примери за африканско кафе.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/rwanda-gaciziro-bourbon.jpg",
+                            IsDeleted = false,
+                            Name = "Руанда Гацизиро | Бърбън",
+                            Price = 27.00m,
+                            Quantity = 115,
+                            WeightId = 4
+                        },
+                        new
+                        {
+                            ProductId = 11,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9102),
+                            Description = "Едно от най-изисканите кафета в света – Панамската Гейша от региона Бокете е известна със своите интензивни флорални аромати, цитрусови нотки и копринена текстура. Сладостта и продължителният послевкус правят това кафе истинско удоволствие.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/panama-boquete-geisha.jpg",
+                            IsDeleted = false,
+                            Name = "Панама Бокете | Гейша",
+                            Price = 30.00m,
+                            Quantity = 105,
+                            WeightId = 1
+                        },
+                        new
+                        {
+                            ProductId = 12,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9106),
+                            Description = "Кафе от региона Гайо в Суматра, което предлага пикантни и земни нотки с намек за канела, тъмен шоколад и индийско орехче. Балансирано тяло и дълъг, сладък послевкус.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/indonesia-sumatra-gayo.jpg",
+                            IsDeleted = false,
+                            Name = "Индонезия Суматра | Gayo",
+                            Price = 22.50m,
+                            Quantity = 95,
+                            WeightId = 3
+                        },
+                        new
+                        {
+                            ProductId = 13,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9110),
+                            Description = "Класическо йеменско кафе с дълбок профил – нотки на тъмен шоколад, черен чай и сушени плодове. Истинско историческо кафе с автентичен вкус.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/yemen-mokha-matari.jpg",
+                            IsDeleted = false,
+                            Name = "Йемен Мокха Матари",
+                            Price = 32.00m,
+                            Quantity = 85,
+                            WeightId = 2
+                        },
+                        new
+                        {
+                            ProductId = 14,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9114),
+                            Description = "Уникално кафе от планините на Уганда със сочен плодов профил и нотки на кайсия, шоколад и карамфил. Отличава се със свежа киселинност и кремообразно тяло.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/uganda-bugisu-sl14-sl28.jpg",
+                            IsDeleted = false,
+                            Name = "Уганда Бугису | SL14 & SL28",
+                            Price = 23.50m,
+                            Quantity = 115,
+                            WeightId = 4
+                        },
+                        new
+                        {
+                            ProductId = 15,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9118),
+                            Description = "Отгледано в региона Маркала, това кафе предлага приятен баланс между сладост и киселинност, с нотки на мед, орех и млечен шоколад.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/honduras-marcala-catuai.jpg",
+                            IsDeleted = false,
+                            Name = "Хондурас Маркала | Катуай",
+                            Price = 21.50m,
+                            Quantity = 100,
+                            WeightId = 1
+                        },
+                        new
+                        {
+                            ProductId = 16,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9134),
+                            Description = "Кафе от региона Серрадо в Бразилия със сладък и плътен профил. Вкусове на лешник, шоколад и карамел правят това кафе отличен избор за еспресо.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/brazil-cerrado-bourbon.jpg",
+                            IsDeleted = false,
+                            Name = "Бразилия Серрадо | Бурбон",
+                            Price = 19.00m,
+                            Quantity = 110,
+                            WeightId = 2
+                        },
+                        new
+                        {
+                            ProductId = 17,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9201),
+                            Description = "Средно изпечено перуанско кафе със сладък и мек вкус. Нотки на тъмен шоколад, бадем и сладка череша. Подходящо за всички методи на приготвяне.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/peru-san-ignacio-catuai.jpg",
+                            IsDeleted = false,
+                            Name = "Перу Сан Игнасио | Катуай",
+                            Price = 23.00m,
+                            Quantity = 90,
+                            WeightId = 3
+                        },
+                        new
+                        {
+                            ProductId = 18,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9207),
+                            Description = "Кафе от един от най-добрите райони в Коста Рика, отличаващо се с карамелена сладост, нотки на ванилия и цитрусово усещане. Перфектно за филтърно кафе.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/costa-rica-tarrazu-caturra.jpg",
+                            IsDeleted = false,
+                            Name = "Коста Рика Тарразу | Катура",
+                            Price = 24.50m,
+                            Quantity = 120,
+                            WeightId = 4
+                        },
+                        new
+                        {
+                            ProductId = 19,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9210),
+                            Description = "Фина селекция от сорта Пакамаара, отличаваща се с плодова сладост и нотки на зелена ябълка, мед и лимон. Изключително комплексно и балансирано кафе.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/el-salvador-santa-ana-pacamara.jpg",
+                            IsDeleted = false,
+                            Name = "Ел Салвадор Санта Ана | Пакамаара",
+                            Price = 26.00m,
+                            Quantity = 80,
+                            WeightId = 2
+                        },
+                        new
+                        {
+                            ProductId = 20,
+                            Brand = "KOMETA",
+                            CreatedOn = new DateTime(2025, 3, 18, 13, 8, 26, 368, DateTimeKind.Local).AddTicks(9214),
+                            Description = "Високопланинско кафе с богата киселинност и сложен ароматен профил. Нотки на кайсия, мед и черен чай го правят предпочитан избор за филтърно кафе.",
+                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/colombia-tolima-castillo.jpg",
+                            IsDeleted = false,
+                            Name = "Колумбия Толуима | Кастийо",
+                            Price = 25.00m,
+                            Quantity = 75,
+                            WeightId = 1
+                        });
+                });
+
+            modelBuilder.Entity("Kafelino.Domain.ProductTasteNote", b =>
+                {
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TasteNoteId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ProductId", "TasteNoteId");
+
+                    b.HasIndex("TasteNoteId");
+
+                    b.ToTable("ProductTasteNotes");
+
+                    b.HasData(
+                        new
+                        {
+                            ProductId = 1,
+                            TasteNoteId = 1
+                        },
+                        new
+                        {
+                            ProductId = 1,
+                            TasteNoteId = 2
+                        },
+                        new
+                        {
+                            ProductId = 1,
+                            TasteNoteId = 3
+                        },
+                        new
+                        {
+                            ProductId = 2,
+                            TasteNoteId = 4
+                        },
+                        new
+                        {
+                            ProductId = 2,
+                            TasteNoteId = 5
+                        },
+                        new
+                        {
+                            ProductId = 2,
+                            TasteNoteId = 6
+                        },
+                        new
+                        {
+                            ProductId = 3,
+                            TasteNoteId = 7
+                        },
+                        new
+                        {
+                            ProductId = 3,
+                            TasteNoteId = 8
+                        },
+                        new
+                        {
+                            ProductId = 3,
+                            TasteNoteId = 9
+                        },
+                        new
+                        {
+                            ProductId = 4,
+                            TasteNoteId = 1
+                        },
+                        new
+                        {
+                            ProductId = 4,
+                            TasteNoteId = 4
+                        },
+                        new
+                        {
+                            ProductId = 4,
+                            TasteNoteId = 13
+                        },
+                        new
+                        {
+                            ProductId = 5,
+                            TasteNoteId = 13
+                        },
+                        new
+                        {
+                            ProductId = 5,
+                            TasteNoteId = 14
+                        },
+                        new
+                        {
+                            ProductId = 5,
+                            TasteNoteId = 15
+                        },
+                        new
+                        {
+                            ProductId = 6,
+                            TasteNoteId = 16
+                        },
+                        new
+                        {
+                            ProductId = 6,
+                            TasteNoteId = 17
+                        },
+                        new
+                        {
+                            ProductId = 6,
+                            TasteNoteId = 15
+                        },
+                        new
+                        {
+                            ProductId = 7,
+                            TasteNoteId = 18
+                        },
+                        new
+                        {
+                            ProductId = 7,
+                            TasteNoteId = 13
+                        },
+                        new
+                        {
+                            ProductId = 7,
+                            TasteNoteId = 19
+                        },
+                        new
+                        {
+                            ProductId = 8,
+                            TasteNoteId = 20
+                        },
+                        new
+                        {
+                            ProductId = 8,
+                            TasteNoteId = 21
+                        },
+                        new
+                        {
+                            ProductId = 8,
+                            TasteNoteId = 13
+                        },
+                        new
+                        {
+                            ProductId = 9,
+                            TasteNoteId = 1
+                        },
+                        new
+                        {
+                            ProductId = 9,
+                            TasteNoteId = 17
+                        },
+                        new
+                        {
+                            ProductId = 9,
+                            TasteNoteId = 11
+                        },
+                        new
+                        {
+                            ProductId = 10,
+                            TasteNoteId = 14
+                        },
+                        new
+                        {
+                            ProductId = 10,
+                            TasteNoteId = 21
+                        },
+                        new
+                        {
+                            ProductId = 10,
+                            TasteNoteId = 11
+                        },
+                        new
+                        {
+                            ProductId = 11,
+                            TasteNoteId = 1
+                        },
+                        new
+                        {
+                            ProductId = 11,
+                            TasteNoteId = 17
+                        },
+                        new
+                        {
+                            ProductId = 11,
+                            TasteNoteId = 11
+                        },
+                        new
+                        {
+                            ProductId = 12,
+                            TasteNoteId = 3
+                        },
+                        new
+                        {
+                            ProductId = 12,
+                            TasteNoteId = 20
+                        },
+                        new
+                        {
+                            ProductId = 12,
+                            TasteNoteId = 6
+                        },
+                        new
+                        {
+                            ProductId = 13,
+                            TasteNoteId = 20
+                        },
+                        new
+                        {
+                            ProductId = 13,
+                            TasteNoteId = 15
+                        },
+                        new
+                        {
+                            ProductId = 13,
+                            TasteNoteId = 14
+                        },
+                        new
+                        {
+                            ProductId = 14,
+                            TasteNoteId = 4
+                        },
+                        new
+                        {
+                            ProductId = 14,
+                            TasteNoteId = 20
+                        },
+                        new
+                        {
+                            ProductId = 14,
+                            TasteNoteId = 3
+                        },
+                        new
+                        {
+                            ProductId = 15,
+                            TasteNoteId = 11
+                        },
+                        new
+                        {
+                            ProductId = 15,
+                            TasteNoteId = 21
+                        },
+                        new
+                        {
+                            ProductId = 15,
+                            TasteNoteId = 20
+                        },
+                        new
+                        {
+                            ProductId = 16,
+                            TasteNoteId = 21
+                        },
+                        new
+                        {
+                            ProductId = 16,
+                            TasteNoteId = 20
+                        },
+                        new
+                        {
+                            ProductId = 16,
+                            TasteNoteId = 13
+                        },
+                        new
+                        {
+                            ProductId = 17,
+                            TasteNoteId = 20
+                        },
+                        new
+                        {
+                            ProductId = 17,
+                            TasteNoteId = 21
+                        },
+                        new
+                        {
+                            ProductId = 17,
+                            TasteNoteId = 14
+                        },
+                        new
+                        {
+                            ProductId = 18,
+                            TasteNoteId = 13
+                        },
+                        new
+                        {
+                            ProductId = 18,
+                            TasteNoteId = 6
+                        },
+                        new
+                        {
+                            ProductId = 18,
+                            TasteNoteId = 19
+                        },
+                        new
+                        {
+                            ProductId = 19,
+                            TasteNoteId = 12
+                        },
+                        new
+                        {
+                            ProductId = 19,
+                            TasteNoteId = 11
+                        },
+                        new
+                        {
+                            ProductId = 19,
+                            TasteNoteId = 17
+                        },
+                        new
+                        {
+                            ProductId = 20,
+                            TasteNoteId = 4
+                        },
+                        new
+                        {
+                            ProductId = 20,
+                            TasteNoteId = 11
+                        },
+                        new
+                        {
+                            ProductId = 20,
+                            TasteNoteId = 15
+                        });
                 });
 
             modelBuilder.Entity("Kafelino.Domain.TasteNote", b =>
@@ -136,187 +720,111 @@ namespace Kafelino.Data.Migrations
                         new
                         {
                             TasteNoteId = 1,
-                            Name = "Шоколад"
+                            Name = "Жасмин"
                         },
                         new
                         {
                             TasteNoteId = 2,
-                            Name = "Карамел"
+                            Name = "Папая"
                         },
                         new
                         {
                             TasteNoteId = 3,
-                            Name = "Ядки"
-                        },
-                        new
-                        {
-                            TasteNoteId = 4,
-                            Name = "Цитрус"
-                        },
-                        new
-                        {
-                            TasteNoteId = 5,
-                            Name = "Горски плодове"
-                        },
-                        new
-                        {
-                            TasteNoteId = 6,
-                            Name = "Цветен"
-                        },
-                        new
-                        {
-                            TasteNoteId = 7,
-                            Name = "Подправки"
-                        },
-                        new
-                        {
-                            TasteNoteId = 8,
-                            Name = "Меласа"
-                        },
-                        new
-                        {
-                            TasteNoteId = 9,
-                            Name = "Мед"
-                        },
-                        new
-                        {
-                            TasteNoteId = 10,
-                            Name = "Ванилия"
-                        },
-                        new
-                        {
-                            TasteNoteId = 11,
-                            Name = "Ябълка"
-                        },
-                        new
-                        {
-                            TasteNoteId = 12,
-                            Name = "Костилкови плодове"
-                        },
-                        new
-                        {
-                            TasteNoteId = 13,
                             Name = "Кафява захар"
                         },
                         new
                         {
+                            TasteNoteId = 4,
+                            Name = "Праскова"
+                        },
+                        new
+                        {
+                            TasteNoteId = 5,
+                            Name = "Кокос"
+                        },
+                        new
+                        {
+                            TasteNoteId = 6,
+                            Name = "Ванилия"
+                        },
+                        new
+                        {
+                            TasteNoteId = 7,
+                            Name = "Боровинки"
+                        },
+                        new
+                        {
+                            TasteNoteId = 8,
+                            Name = "Грозде"
+                        },
+                        new
+                        {
+                            TasteNoteId = 9,
+                            Name = "Натурален шоколад"
+                        },
+                        new
+                        {
+                            TasteNoteId = 10,
+                            Name = "Ягода"
+                        },
+                        new
+                        {
+                            TasteNoteId = 11,
+                            Name = "Мед"
+                        },
+                        new
+                        {
+                            TasteNoteId = 12,
+                            Name = "Червена ябълка"
+                        },
+                        new
+                        {
+                            TasteNoteId = 13,
+                            Name = "Карамел"
+                        },
+                        new
+                        {
                             TasteNoteId = 14,
-                            Name = "Грейпфрут"
+                            Name = "Зряла череша"
                         },
                         new
                         {
                             TasteNoteId = 15,
-                            Name = "Тофи"
-                        },
-                        new
-                        {
-                            TasteNoteId = 16,
-                            Name = "Лешник"
-                        },
-                        new
-                        {
-                            TasteNoteId = 17,
-                            Name = "Тропически плодове"
-                        },
-                        new
-                        {
-                            TasteNoteId = 18,
-                            Name = "Канела"
-                        },
-                        new
-                        {
-                            TasteNoteId = 19,
                             Name = "Черен чай"
                         },
                         new
                         {
-                            TasteNoteId = 20,
-                            Name = "Тъмен шоколад"
-                        });
-                });
-
-            modelBuilder.Entity("Kafelino.Domain.Weight", b =>
-                {
-                    b.Property<int>("WeightId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("WeightId"));
-
-                    b.Property<string>("Unit")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Value")
-                        .HasColumnType("int");
-
-                    b.HasKey("WeightId");
-
-                    b.ToTable("Weights");
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("NormalizedName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NormalizedName")
-                        .IsUnique()
-                        .HasDatabaseName("RoleNameIndex")
-                        .HasFilter("[NormalizedName] IS NOT NULL");
-
-                    b.ToTable("AspNetRoles", (string)null);
-
-                    b.HasData(
+                            TasteNoteId = 16,
+                            Name = "Касис"
+                        },
                         new
                         {
-                            Id = "8fb405a8-a209-4cdc-ade4-0b5f7759abf6",
-                            ConcurrencyStamp = "8fb405a8-a209-4cdc-ade4-0b5f7759abf6",
-                            Name = "Admin",
-                            NormalizedName = "ADMIN"
+                            TasteNoteId = 17,
+                            Name = "Цитрусови плодове"
+                        },
+                        new
+                        {
+                            TasteNoteId = 18,
+                            Name = "Какао"
+                        },
+                        new
+                        {
+                            TasteNoteId = 19,
+                            Name = "Портокалова кора"
+                        },
+                        new
+                        {
+                            TasteNoteId = 20,
+                            Name = "Шоколад"
+                        },
+                        new
+                        {
+                            TasteNoteId = 21,
+                            Name = "Лешник"
                         });
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("ClaimType")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ClaimValue")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("RoleId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("RoleId");
-
-                    b.ToTable("AspNetRoleClaims", (string)null);
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
+            modelBuilder.Entity("Kafelino.Domain.User", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -324,14 +832,13 @@ namespace Kafelino.Data.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<string>("Cart")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasMaxLength(13)
-                        .HasColumnType("nvarchar(13)");
 
                     b.Property<string>("Email")
                         .HasMaxLength(256)
@@ -339,6 +846,14 @@ namespace Kafelino.Data.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -385,9 +900,152 @@ namespace Kafelino.Data.Migrations
 
                     b.ToTable("AspNetUsers", (string)null);
 
-                    b.HasDiscriminator().HasValue("IdentityUser");
+                    b.HasData(
+                        new
+                        {
+                            Id = "8a6e481c-85b1-4dde-b450-1ff5eeb95669",
+                            AccessFailedCount = 0,
+                            Cart = "",
+                            ConcurrencyStamp = "eef942f7-edc0-44f4-99c5-08bb14d2eb6c",
+                            Email = "admin@kafelino.com",
+                            EmailConfirmed = true,
+                            FirstName = "Иван",
+                            LastName = "Георгиев",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ADMIN@KAFELINO.COM",
+                            NormalizedUserName = "ADMIN@KAFELINO.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEM9mhIaF/+ITlTGh9vOhxcJkLP49kt2SUN4Gr4Wl5/ddrZ2KEqvimrXjCRzbd2x00w==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "077a4bfc-54aa-41ef-a8fa-e956b6b1d9fe",
+                            TwoFactorEnabled = false,
+                            UserName = "admin@kafelino.com"
+                        },
+                        new
+                        {
+                            Id = "9061f60d-c9ad-475f-a206-160064b3dd92",
+                            AccessFailedCount = 0,
+                            Cart = "",
+                            ConcurrencyStamp = "15ea516e-b974-46eb-abfa-a8982558d384",
+                            Email = "user@kafelino.com",
+                            EmailConfirmed = true,
+                            FirstName = "Михаил",
+                            LastName = "Филипов",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "USER@KAFELINO.COM",
+                            NormalizedUserName = "USER@KAFELINO.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIQ4bLN0CkjfzBvhUNn9TglPV1QG1HflyxrIxgdcQo20qCa3u23r5QHscIcUBmsS9w==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "4d36a84b-0205-484a-98d0-a01581176cd8",
+                            TwoFactorEnabled = false,
+                            UserName = "user@kafelino.com"
+                        });
+                });
 
-                    b.UseTphMappingStrategy();
+            modelBuilder.Entity("Kafelino.Domain.Weight", b =>
+                {
+                    b.Property<int>("WeightId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("WeightId"));
+
+                    b.Property<string>("Unit")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Value")
+                        .HasColumnType("int");
+
+                    b.HasKey("WeightId");
+
+                    b.ToTable("Weights");
+
+                    b.HasData(
+                        new
+                        {
+                            WeightId = 1,
+                            Unit = "г",
+                            Value = 250
+                        },
+                        new
+                        {
+                            WeightId = 2,
+                            Unit = "г",
+                            Value = 500
+                        },
+                        new
+                        {
+                            WeightId = 3,
+                            Unit = "кг",
+                            Value = 1
+                        },
+                        new
+                        {
+                            WeightId = 4,
+                            Unit = "кг",
+                            Value = 2
+                        });
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "3955f00f-c0ab-4ad4-83e8-f536fca1b19d",
+                            ConcurrencyStamp = "3955f00f-c0ab-4ad4-83e8-f536fca1b19d",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        });
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RoleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -456,8 +1114,8 @@ namespace Kafelino.Data.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "35b71e3f-3f1b-4df6-9107-6202cc375db2",
-                            RoleId = "8fb405a8-a209-4cdc-ade4-0b5f7759abf6"
+                            UserId = "8a6e481c-85b1-4dde-b450-1ff5eeb95669",
+                            RoleId = "3955f00f-c0ab-4ad4-83e8-f536fca1b19d"
                         });
                 });
 
@@ -480,89 +1138,6 @@ namespace Kafelino.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
-                });
-
-            modelBuilder.Entity("ProductTasteNote", b =>
-                {
-                    b.Property<int>("ProductsProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TasteNotesTasteNoteId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ProductsProductId", "TasteNotesTasteNoteId");
-
-                    b.HasIndex("TasteNotesTasteNoteId");
-
-                    b.ToTable("ProductTasteNote");
-                });
-
-            modelBuilder.Entity("ProductWeight", b =>
-                {
-                    b.Property<int>("ProductsProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("WeightsWeightId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ProductsProductId", "WeightsWeightId");
-
-                    b.HasIndex("WeightsWeightId");
-
-                    b.ToTable("ProductWeight");
-                });
-
-            modelBuilder.Entity("Kafelino.Domain.User", b =>
-                {
-                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasDiscriminator().HasValue("User");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "35b71e3f-3f1b-4df6-9107-6202cc375db2",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "3c645650-6fb6-49d7-aa00-ca67e8337660",
-                            Email = "admin@kafelino.com",
-                            EmailConfirmed = true,
-                            LockoutEnabled = false,
-                            NormalizedEmail = "ADMIN@KAFELINO.COM",
-                            NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPtIDf85vQxaSjrvD15B5ipIbszPGjCwe4+umqBpnHZy2oEi50sSZq8PjCIrnChnYg==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "1de48e53-ec6e-4a1f-bb4a-66c47ed5c0ca",
-                            TwoFactorEnabled = false,
-                            UserName = "admin",
-                            FirstName = "Иван",
-                            LastName = "Георгиев"
-                        },
-                        new
-                        {
-                            Id = "7c34f2c3-d123-4d87-82ca-b0b1878b1eef",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "a0963702-fd6f-4a39-ad11-c2da4fb0ebf9",
-                            Email = "user@kafelino.com",
-                            EmailConfirmed = true,
-                            LockoutEnabled = false,
-                            NormalizedEmail = "USER@kafelino.COM",
-                            NormalizedUserName = "USER",
-                            PasswordHash = "AQAAAAIAAYagAAAAEP7s/YPQ9Q5LMcxgrGJ+m5D5Wj6UhHh2F5Jx905hLu6A+eUFo3mZc4yq0HcP7TyOhQ==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "97367c58-ae66-460e-abfa-39ce63834603",
-                            TwoFactorEnabled = false,
-                            UserName = "user",
-                            FirstName = "Михаил",
-                            LastName = "Филипов"
-                        });
                 });
 
             modelBuilder.Entity("Kafelino.Domain.Order", b =>
@@ -595,6 +1170,36 @@ namespace Kafelino.Data.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("Kafelino.Domain.Product", b =>
+                {
+                    b.HasOne("Kafelino.Domain.Weight", "Weight")
+                        .WithMany("Products")
+                        .HasForeignKey("WeightId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Weight");
+                });
+
+            modelBuilder.Entity("Kafelino.Domain.ProductTasteNote", b =>
+                {
+                    b.HasOne("Kafelino.Domain.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Kafelino.Domain.TasteNote", "TasteNote")
+                        .WithMany()
+                        .HasForeignKey("TasteNoteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("TasteNote");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -606,7 +1211,7 @@ namespace Kafelino.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("Kafelino.Domain.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -615,7 +1220,7 @@ namespace Kafelino.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("Kafelino.Domain.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -630,7 +1235,7 @@ namespace Kafelino.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("Kafelino.Domain.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -639,39 +1244,9 @@ namespace Kafelino.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("Kafelino.Domain.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ProductTasteNote", b =>
-                {
-                    b.HasOne("Kafelino.Domain.Product", null)
-                        .WithMany()
-                        .HasForeignKey("ProductsProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Kafelino.Domain.TasteNote", null)
-                        .WithMany()
-                        .HasForeignKey("TasteNotesTasteNoteId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ProductWeight", b =>
-                {
-                    b.HasOne("Kafelino.Domain.Product", null)
-                        .WithMany()
-                        .HasForeignKey("ProductsProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Kafelino.Domain.Weight", null)
-                        .WithMany()
-                        .HasForeignKey("WeightsWeightId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -689,6 +1264,11 @@ namespace Kafelino.Data.Migrations
             modelBuilder.Entity("Kafelino.Domain.User", b =>
                 {
                     b.Navigation("Orders");
+                });
+
+            modelBuilder.Entity("Kafelino.Domain.Weight", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

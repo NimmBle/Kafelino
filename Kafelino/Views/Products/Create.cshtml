@@ -45,16 +45,27 @@
                 <span asp-validation-for="Brand" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="WeightId">Разфасофки</label>
+                <select asp-for="WeightId" class="form-control" name="WeightId">
+                    @foreach (Weight weight in ViewBag.Weights)
+                    {
+                        <option value="@weight.WeightId">@weight.Value@weight.Unit.</option>
+                    }
+                </select>
+                <span asp-validation-for="WeightId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label for="TasteNotes">Вкусови нотки</label>
-                <select asp-for="TasteNoteIds" class="form-control" multiple="multiple" name="TasteNoteIds">
+                <select asp-for="TasteNoteIds" class="form-control js-example-basic-multiple" multiple="multiple" name="TasteNoteIds[]">
                     @foreach (TasteNote tasteNote in ViewBag.TasteNotes)
                     {
                         <option value="@tasteNote.TasteNoteId">@tasteNote.Name</option>
                     }
                 </select>
+                <span asp-validation-for="TasteNoteIds" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary mt-4" />
             </div>
         </form>
     </div>
@@ -64,3 +75,8 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
+<script>
+    $(document).ready(function() {
+        $(".js-example-basic-multiple").select2(); // Initialize Select2 if used
+    });
+</script>

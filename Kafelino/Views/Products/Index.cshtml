@@ -1,3 +1,4 @@
+@using Microsoft.AspNetCore.Mvc.TagHelpers
 @model IEnumerable<Kafelino.Domain.Product>
 
 @{
@@ -34,8 +35,17 @@
             <th>
                 @Html.DisplayNameFor(model => model.IsDeleted)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedOn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Weight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TasteNotes)
+            </th>
             <th></th>
-        </tr>
+        </tr>   
     </thead>
     <tbody>
 @foreach (var item in Model) {
@@ -47,7 +57,7 @@
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
-                <img src="~/Images/@item.ImageUrl" alt="">
+                <img style="width: 80px; height: 80px" src="@item.ImageUrl" alt="">
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Price)
@@ -61,6 +71,16 @@
             <td>
                 @Html.DisplayFor(modelItem => item.IsDeleted)
             </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedOn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight.Value)
+                @Html.DisplayFor(modelItem => item.Weight.Unit)
+            </td>
+            @* <td> *@
+            @*     @Html.DisplayFor(modelItem => item.TasteNotes.Select(ts => ts.Name)) *@
+            @* </td> *@
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ProductId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.ProductId">Details</a> |
