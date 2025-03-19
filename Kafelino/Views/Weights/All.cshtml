@@ -1,0 +1,39 @@
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<Kafelino.Models.WeightViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Вкусови нотки</h1>
+
+@if (this.User.IsInRole("Admin"))
+{
+    <p>
+        <a asp-action="Create">Добави нова нотка</a>
+    </p>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Value) @Html.DisplayNameFor(model => model.Unit)
+            </th>
+            <th></th>
+        </tr>   
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(model => item.Value) @Html.DisplayFor(model => item.Unit)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.WeightId">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@item.WeightId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

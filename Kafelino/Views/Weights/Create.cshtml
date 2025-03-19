@@ -1,0 +1,44 @@
+@model Kafelino.Models.WeightViewModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Създай нова нотка</h1>
+
+<h4>Вкусови нотки</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Value" class="control-label"></label>
+                <input asp-for="Value" class="form-control" />
+                <span asp-validation-for="Value" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Unit">Разфасофки</label>
+                <select asp-for="Unit" class="form-control" name="Unit">
+                    <option asp-for="Unit" value="г">г</option>
+                    <option asp-for="Unit" value="кг">кг</option>
+                </select>
+                <span asp-validation-for="Unit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary mt-4" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="All">Към всички</a>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".js-example-basic-multiple").select2(); // Initialize Select2 if used
+    });
+</script>

@@ -32,12 +32,22 @@ namespace Kafelino.Data
             // Конфигурация на product модела
             builder.Entity<Product>()
                 .HasOne(p => p.Weight)
-                .WithMany(w => w.Products);
+                .WithMany(w => w.Products)
+                .OnDelete(DeleteBehavior.Restrict);
 
             builder.Entity<Product>()
                 .HasMany(p => p.TasteNotes)
                 .WithMany(ts => ts.Products)
                 .UsingEntity<ProductTasteNote>();
+                // .UsingEntity<ProductTasteNote>(
+                //     x => x.HasOne<TasteNote>().WithMany().OnDelete(DeleteBehavior.SetNull),
+                //     x => x.HasOne<Product>().WithMany().OnDelete(DeleteBehavior.Restrict),
+                //     x =>
+                //     {
+                //         x.Property(pt => pt.ProductId).IsRequired();
+                //         x.HasKey(p => new { p.ProductId, p.TasteNoteId });
+                //     }
+                // );
 
             builder.Entity<Product>()
                 .HasMany(p => p.OrderProducts)

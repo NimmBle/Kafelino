@@ -31,8 +31,6 @@ namespace Kafelino.Controllers
                 .Include(p => p.TasteNotes)
                 .Include(p => p.Weight)
                 .ToListAsync();
-
-            Console.WriteLine(User);
             
             return View(products);
         }
