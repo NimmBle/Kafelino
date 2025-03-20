@@ -192,7 +192,7 @@ public class UsersController : Controller
 					    Price = p.Price,
 					    Quantity = p.Quantity,
 					    Brand = p.Brand,
-					    Weights = p.Weight,
+					    Weight = p.Weight,
 					    TasteNotes = p.TasteNotes,
 				    })
 				    .FirstOrDefaultAsync();

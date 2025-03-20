@@ -41,7 +41,7 @@ public class OrdersController : Controller
                     ImageUrl = c.Product.ImageUrl,
                     Price = c.Product.Price,
                     Brand = c.Product.Brand,
-                    Weights = c.Product.Weight,
+                    Weight = c.Product.Weight,
                     TasteNotes = c.Product.TasteNotes,
                 })
                 .ToListAsync();
@@ -88,11 +88,15 @@ public class OrdersController : Controller
             {
                 OrderId = order.OrderId,
                 ProductId = product.ProductId,
+                Quantity = product.Quantity
             };
+            
+            await this._context.OrderProducts.AddAsync(orderProduct);
+            await this._context.SaveChangesAsync();
         }
         
         user.Products.Clear();
-
+        
         await this._context.SaveChangesAsync();
 
         return RedirectToAction("Confirmation");
@@ -106,7 +110,6 @@ public class OrdersController : Controller
     }
     
     [HttpGet]
-    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> All()
     {
         var orders = await this._context.Orders
@@ -147,9 +150,9 @@ public class OrdersController : Controller
                         Description = p.Description,
                         ImageUrl = p.ImageUrl,
                         Price = p.Price,
-                        Quantity = p.Quantity,
+                        Quantity = orderProduct.Quantity,
                         Brand = p.Brand,
-                        Weights = p.Weight,
+                        Weight = p.Weight,
                         TasteNotes = p.TasteNotes,
                     })
                     .FirstOrDefaultAsync();
@@ -157,8 +160,65 @@ public class OrdersController : Controller
                 order.Products.Add(product);
             }
         }
-
+        
         return this.View(orders);
     }
+    
+    [HttpGet]
+        public async Task<IActionResult> Mine()
+        {
+            var user = await this._userManager.GetUserAsync(User);
 
+            var orders = await this._context.Orders
+                .Where(o => o.UserId == user.Id)
+                .Select(o => new OrderDetailsOutputModel()
+                {
+                    Id = o.OrderId,
+                    TotalSum = o.TotalSum,
+                    Address = o.Address,
+                    PhoneNumber = o.PhoneNumber,
+                    UserId = o.UserId,
+                    User = this._context.Users
+                        .Where(u => u.Id == o.UserId)
+                        .Select(u => new UserDetailsViewModel()
+                        {
+                            UserId = u.Id,
+                            Name = u.FirstName + " " + u.LastName,
+                            Email = u.Email
+                        })
+                        .SingleOrDefault(),
+                    Products = new List<ProductDetailsViewModel>()
+                })
+                .ToListAsync();
+
+            foreach (var order in orders)
+            {
+                var orderProducts = await this._context.OrderProducts
+                    .Where(op => op.OrderId == order.Id)
+                    .ToListAsync();
+
+                foreach (var orderProduct in orderProducts)
+                {
+                    var product = await this._context.Products
+                        .Where(p => p.ProductId == orderProduct.ProductId)
+                        .Select(p => new ProductDetailsViewModel()
+                        {
+                            ProductId = p.ProductId,
+                            Name = p.Name,
+                            Description = p.Description,
+                            ImageUrl = p.ImageUrl,
+                            Price = p.Price,
+                            Quantity = orderProduct.Quantity,
+                            Brand = p.Brand,
+                            Weight = p.Weight,
+                            TasteNotes = p.TasteNotes,
+                        })
+                        .FirstOrDefaultAsync();
+
+                    order.Products.Add(product);
+                }
+            }
+
+            return this.View(orders);
+        }
 }

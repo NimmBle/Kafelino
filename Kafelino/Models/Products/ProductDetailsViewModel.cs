@@ -25,7 +25,7 @@ public class ProductDetailsViewModel
     public DateTime CreatedOn { get; set; } = DateTime.Now;
     
     public int WeightId { get; set; }
-    public Weight Weights { get; set; }
+    public Weight Weight { get; set; }
     
     public ICollection<TasteNote> TasteNotes { get; set; } = new HashSet<TasteNote>();
 

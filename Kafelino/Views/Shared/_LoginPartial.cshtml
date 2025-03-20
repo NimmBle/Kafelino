@@ -18,13 +18,19 @@
             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Администрация</button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <li><a class="dropdown-item" asp-controller="Products" asp-action="Create">Добави продукт</a></li>
-                <li><a class="dropdown-item" asp-controller="Products" asp-action="Index">Продукти</a></li>
+                <li><a class="dropdown-item" asp-controller="Products" asp-action="All">Продукти</a></li>
                 <li><a class="dropdown-item" asp-controller="Users" asp-action="Add">Добави потребител</a></li>
                 <li><a class="dropdown-item" asp-controller="Users" asp-action="All">Потребители</a></li>
                 <li><a class="dropdown-item" asp-controller="Orders" asp-action="All">Поръчки</a></li>
                 <li><a class="dropdown-item" asp-controller="TasteNotes" asp-action="All">Вкусови нотки</a></li>
                 <li><a class="dropdown-item" asp-controller="Weights" asp-action="All">Разфасовки</a></li>
             </ul>
+        </li>
+    }
+    @if (this.User.Identity.IsAuthenticated && !this.User.IsInRole("Admin"))
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-controller="Orders" asp-action="Mine">Поръчки</a>
         </li>
     }
     <li class="nav-item">

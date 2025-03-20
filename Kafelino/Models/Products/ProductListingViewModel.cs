@@ -4,21 +4,13 @@ namespace Kafelino.Models.Products;
 
 public class ProductListingViewModel
 {
-    public int ProductId { get; set; }
+    public ICollection<TasteNote> TasteNotes { get; set; } = new List<TasteNote>();
     
-    public string Name { get; set; }
+    public ICollection<Weight> Weights { get; set; } = new List<Weight>();
     
-    public string Description { get; set; }
+    public ICollection<ProductDetailsViewModel> Products { get; set; }
     
-    public string ImageUrl { get; set; }
-    
-    public int Quantity { get; set; }
-    
-    public decimal Price { get; set; }
+    public int MinPrice { get; set; }
 
-    public string Brand { get; set; }
-    
-    public Weight Weight { get; set; }
-    
-    public ICollection<TasteNote> TasteNotes { get; set; } = new HashSet<TasteNote>();
+    public int MaxPrice { get; set; } = 1000;
 }
