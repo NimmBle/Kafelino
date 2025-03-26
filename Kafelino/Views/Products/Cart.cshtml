@@ -1,5 +1,5 @@
-@using Kafelino.Domain
 @using Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.AspNetCore.Server.Kestrel.Core
 @model IEnumerable<Kafelino.Models.Products.ProductDetailsViewModel>
 
 @{
@@ -11,7 +11,9 @@
 <p>
     <a asp-action="Create">Количка</a>
 </p>
-<table class="table">
+@if (@Model.Count() > 0)
+{
+   <table class="table">
     <thead>
     <tr>
         <th>
@@ -75,4 +77,9 @@
 
 <div class="row">
     <a class="btn btn-danger" asp-controller="Orders" asp-action="Overview">Поръчай</a>
-</div>
+</div> 
+}
+@if (Model.Count() == 0)
+{
+    <h2>Няма продукти в количката</h2>
+}

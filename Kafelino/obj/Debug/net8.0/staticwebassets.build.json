@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OK2UqUF+6z5yCRDPycQ4m2tq3CUelvhjEK4jPnwn3Vc=",
+  "Hash": "maTPFI2U9sNJD4ULYSczCiy5R9ntICMfYB903rwtsvs=",
   "Source": "Kafelino",
   "BasePath": "_content/Kafelino",
   "Mode": "Default",
@@ -1569,6 +1569,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\bf30a737-7662-4eb5-b5fc-d527a62dd60e.png"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\c15a4578-e3bf-4881-a0a0-3f03e65e43ed.webp",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/c15a4578-e3bf-4881-a0a0-3f03e65e43ed#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b8xw21t2o1",
+      "Integrity": "xVl9DLL4K4rHx4EHSty/fbMDdQOGDPtNdXCzaK42jkI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\c15a4578-e3bf-4881-a0a0-3f03e65e43ed.webp"
     },
     {
       "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\c6546dad-40ee-4be3-854e-2f6ee5d2c47b.png",
@@ -6096,6 +6117,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-nJ0GhGG3V9ybAoHkqIzyuk3Fm9Od1TDL3xmef4tvlBs="
+        }
+      ]
+    },
+    {
+      "Route": "Images/c15a4578-e3bf-4881-a0a0-3f03e65e43ed.b8xw21t2o1.webp",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\c15a4578-e3bf-4881-a0a0-3f03e65e43ed.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "373704"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xVl9DLL4K4rHx4EHSty/fbMDdQOGDPtNdXCzaK42jkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 06:50:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b8xw21t2o1"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/c15a4578-e3bf-4881-a0a0-3f03e65e43ed.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xVl9DLL4K4rHx4EHSty/fbMDdQOGDPtNdXCzaK42jkI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/c15a4578-e3bf-4881-a0a0-3f03e65e43ed.webp",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\c15a4578-e3bf-4881-a0a0-3f03e65e43ed.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "373704"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xVl9DLL4K4rHx4EHSty/fbMDdQOGDPtNdXCzaK42jkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 06:50:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xVl9DLL4K4rHx4EHSty/fbMDdQOGDPtNdXCzaK42jkI="
         }
       ]
     },

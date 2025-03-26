@@ -1,4 +1,5 @@
 @using Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.Data.SqlClient.DataClassification
 @model Kafelino.Models.Products.ProductListingViewModel
 
 @{
@@ -14,25 +15,67 @@
         <a asp-action="Create">Create New</a>
     </p>
 }
-@foreach (var weight in Model.Weights)
-{
-    <a asp-action="FilterByWeight" asp-route-weightId="@weight.WeightId">@weight.Value@weight.Unit.</a>
-}
-@foreach (var taste in Model.TasteNotes)
-{
-    <a asp-action="FilterByTasteNote" asp-route-tasteNoteId="@taste.TasteNoteId">@taste.Name</a>
-}
-<form asp-action="FilterByPrice">
+@* @foreach (var weight in Model.Weights) *@
+@* { *@
+@*     <a asp-action="FilterByWeight" asp-route-weightId="@weight.WeightId">@weight.Value@weight.Unit.</a> *@
+@* } *@
+@* @foreach (var taste in Model.TasteNotes) *@
+@* { *@
+@*     <a asp-action="FilterByTasteNote" asp-route-tasteNoteId="@taste.TasteNoteId">@taste.Name</a> *@
+@* } *@
+@* @foreach (var brand in Model.Brands) *@
+@* { *@
+@*     <a asp-action="FilterByBrand" asp-route-brand="@brand">@brand</a> *@
+@* } *@
+@* <form asp-action="FilterByPrice"> *@
+@*     <div class="form-group"> *@
+@*         <input type="number" asp-for="MinPrice"> *@
+@*     </div> *@
+@*     <div class="form-group"> *@
+@*         <input type="number" asp-for="MaxPrice"> *@
+@*     </div> *@
+@*     <button type="submit" class="btn">=></button> *@
+@* </form> *@
+
+<form method="get" asp-action="Filter" asp-controller="Products">
     <div class="form-group">
-        <input type="number" asp-for="MinPrice">
+        @foreach (var weight in Model.Filters.Weights)
+        {
+            var isChecked = weight.Value == Model.Filters.Weight ? "checked" : "";
+            
+            <input type="radio" id="@weight" name="weight" value="@weight.Value" @isChecked/>
+            <label for="@weight">@weight.Value@weight.Unit</label>
+        }
     </div>
     <div class="form-group">
-        <input type="number" asp-for="MaxPrice">
+        @foreach (var taste in Model.Filters.TasteNotes)
+        {
+            var isChecked = taste.Name == Model.Filters.TasteNote ? "checked" : "";
+            
+            <input type="radio" id="taste" name="TasteNote" value="@taste.Name" @isChecked/>
+            <label for="taste">@taste.Name</label>
+        }
+    </div>
+    <div class="form-group">
+        @foreach (var brand in Model.Filters.Brands)
+        {
+            var isChecked = brand == Model.Filters.Brand ? "checked" : "";
+            
+            <input type="radio" id="brand" name="brand" value="@brand" @isChecked/>
+            <label for="brand">@brand</label>
+        }
+    </div>
+    <div class="form-group">
+        <input type="number" value="@Model.Filters.MinPrice" name="minPrice" asp-for="@Model.Filters.MinPrice">
+    </div>
+    <div class="form-group">
+        <input type="number" value="@Model.Filters.MaxPrice" name="maxPrice" asp-for="@Model.Filters.MaxPrice">
     </div>
     <button type="submit" class="btn">=></button>
 </form>
-
-<table class="table">
+@if (@Model.Products.Count > 0)
+{
+    <table class="table">
     <thead>
         <tr>
             <th>
@@ -130,3 +173,10 @@
     }
     </tbody>
 </table>
+}
+@if (Model.Products.Count == 0)
+{
+    <h2>Няма продукти</h2>
+}
+
+

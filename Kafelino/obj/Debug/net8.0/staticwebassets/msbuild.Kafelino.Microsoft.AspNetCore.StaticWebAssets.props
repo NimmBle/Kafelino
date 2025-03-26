@@ -216,6 +216,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\bf30a737-7662-4eb5-b5fc-d527a62dd60e.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\c15a4578-e3bf-4881-a0a0-3f03e65e43ed.webp'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Kafelino</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Kafelino</BasePath>
+      <RelativePath>Images/c15a4578-e3bf-4881-a0a0-3f03e65e43ed.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>b8xw21t2o1</Fingerprint>
+      <Integrity>xVl9DLL4K4rHx4EHSty/fbMDdQOGDPtNdXCzaK42jkI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\c15a4578-e3bf-4881-a0a0-3f03e65e43ed.webp'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\c6546dad-40ee-4be3-854e-2f6ee5d2c47b.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Kafelino</SourceId>

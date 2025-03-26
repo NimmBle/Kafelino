@@ -294,3 +294,4 @@ C:\Users\hrist\source\repos\Kafelino\Kafelino\bin\Debug\net8.0\runtimes\win-arm\
 C:\Users\hrist\source\repos\Kafelino\Kafelino\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\hrist\source\repos\Kafelino\Kafelino\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\hrist\source\repos\Kafelino\Kafelino\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\hrist\source\repos\Kafelino\Kafelino\obj\Debug\net8.0\Kafelino.sourcelink.json

@@ -45,20 +45,52 @@ namespace Kafelino.Controllers
                 })
                 .ToListAsync();
             
-            productListingModel.MinPrice = (int)Math.Floor(productListingModel.Products.Min(p => p.Price));
-            productListingModel.MaxPrice = (int)Math.Ceiling(productListingModel.Products.Max(p => p.Price));
+            productListingModel.Filters.MinPrice = (int)Math.Floor(productListingModel.Products.Min(p => p.Price));
+            productListingModel.Filters.MaxPrice = (int)Math.Ceiling(productListingModel.Products.Max(p => p.Price));
             
             return View(productListingModel);
         }
-
-        public async Task<IActionResult> FilterByWeight(int weightId)
+        
+        public async Task<IActionResult> Filter(ProductFiltersViewModel filter)
         {
             var productListingModel = await this.GetProductListingViewModel();
             
-            productListingModel.Products = await _context.Products
-                .Where(p => p.Weight.WeightId == weightId)
-                .Include(p => p.Weight)
+            var query = _context.Products
                 .Include(p => p.TasteNotes)
+                .Include(p => p.Weight)
+                .AsQueryable();
+
+            // Filter by TasteNotes
+            if (!string.IsNullOrEmpty(filter.TasteNote))
+            {
+                query = query.Where(p => p.TasteNotes.Any(t => t.Name == filter.TasteNote));
+                productListingModel.Filters.TasteNote = filter.TasteNote;
+            }
+
+            // Filter by Weights
+            if (filter.Weight != 0)
+            {
+                query = query.Where(p => p.Weight.Value == filter.Weight);
+                productListingModel.Filters.Weight = filter.Weight;
+            }
+            
+            if (!string.IsNullOrEmpty(filter.Brand))
+            {
+                query = query.Where(p => p.Brand.ToLower() == filter.Brand.ToLower());
+                productListingModel.Filters.Brand = filter.Brand;
+            }
+
+            // Filter by Price Range
+            if (filter.MinPrice > 0)
+            {
+                query = query.Where(p => p.Price >= filter.MinPrice);
+            }
+            if (filter.MaxPrice > 0)
+            {
+                query = query.Where(p => p.Price <= filter.MaxPrice);
+            }
+
+            productListingModel.Products = await query
                 .Select(p => new ProductDetailsViewModel
                 {
                     ProductId = p.ProductId,
@@ -72,66 +104,16 @@ namespace Kafelino.Controllers
                     TasteNotes = p.TasteNotes,
                 })
                 .ToListAsync();
-                
-                // await _context.Products
-                // .Where(p => p.IsDeleted == false && p.Quantity > 0 && p.Weight.Value == weight.Value)
-                // .Include(p => p.TasteNotes)
-                // .Include(p => p.Weight)
-                // .ToListAsync();
-
-            return View(nameof(All), productListingModel);
-        }
-
-        public async Task<IActionResult> FilterByTasteNote(int tasteNoteId)
-        {
-            var productListingModel = await this.GetProductListingViewModel();
             
-            productListingModel.Products = await _context.Products
-                .Where(p => p.TasteNotes.Any(ts => ts.TasteNoteId == tasteNoteId))
-                .Include(p => p.Weight)
-                .Include(p => p.TasteNotes)
-                .Select(p => new ProductDetailsViewModel
-                {
-                    ProductId = p.ProductId,
-                    Name = p.Name,
-                    Description = p.Description,
-                    ImageUrl = p.ImageUrl,
-                    Price = p.Price,
-                    Quantity = p.Quantity,
-                    Brand = p.Brand,
-                    Weight = p.Weight,
-                    TasteNotes = p.TasteNotes,
-                })
-                .ToListAsync();
-
+            if (productListingModel.Products.Count > 0)
+            {
+                productListingModel.Filters.MinPrice = (int)Math.Floor(productListingModel.Products.Min(p => p.Price));
+                productListingModel.Filters.MaxPrice = (int)Math.Ceiling(productListingModel.Products.Max(p => p.Price));
+            }
+    
             return View(nameof(All), productListingModel);
         }
         
-        public async Task<IActionResult> FilterByPrice(int minPrice, int maxPrice)
-        {
-            var productListingModel = await this.GetProductListingViewModel();
-            
-            productListingModel.Products = await _context.Products
-                .Where(p => p.Price >= minPrice && p.Price <= maxPrice)
-                .Include(p => p.Weight)
-                .Include(p => p.TasteNotes)
-                .Select(p => new ProductDetailsViewModel
-                {
-                    ProductId = p.ProductId,
-                    Name = p.Name,
-                    Description = p.Description,
-                    ImageUrl = p.ImageUrl,
-                    Price = p.Price,
-                    Quantity = p.Quantity,
-                    Brand = p.Brand,
-                    Weight = p.Weight,
-                    TasteNotes = p.TasteNotes,
-                })
-                .ToListAsync();
-
-            return View(nameof(All), productListingModel);
-        }
-
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -189,6 +171,11 @@ namespace Kafelino.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CreateProductInputModel inputModel)
         {
+            if (ProductExists(inputModel.Name))
+            {
+                ModelState.AddModelError(string.Empty, "Продукт със същото име вече съществува");
+            }
+            
             if (!ModelState.IsValid)
             {
                 ViewBag.TasteNotes = _context.TasteNotes.ToList();
@@ -220,7 +207,7 @@ namespace Kafelino.Controllers
             _context.Add(product);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(All));
 
         }
 
@@ -307,7 +294,7 @@ namespace Kafelino.Controllers
             _context.Update(product);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(All));
         }
 
         // GET: Products/Delete/5
@@ -340,7 +327,7 @@ namespace Kafelino.Controllers
             }
 
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(All));
         }
 
         [HttpPost]
@@ -459,9 +446,10 @@ namespace Kafelino.Controllers
             return View(productsInCart);
         }
 
-        private bool ProductExists(int id)
+        private bool ProductExists(string name)
         {
-            return _context.Products.Any(e => e.ProductId == id);
+            return _context.Products
+                .Any(e => e.Name == name);
         }
 
         private string UploadImage(IFormFile file)
@@ -498,12 +486,19 @@ namespace Kafelino.Controllers
         {
             return new ProductListingViewModel
             {
-                TasteNotes = await _context.TasteNotes
-                    .ToListAsync(),
+                Filters = new ProductFiltersViewModel()
+                {
+                    TasteNotes = await _context.TasteNotes
+                        .ToListAsync(),
 
-                Weights = await _context.Weights
-                    .ToListAsync(),
+                    Weights = await _context.Weights
+                        .ToListAsync(),
                 
+                    Brands = await this._context.Products
+                        .Select(p => p.Brand)
+                        .Distinct()
+                        .ToListAsync()
+                }
             };
         }
 }
