@@ -31,7 +31,7 @@ namespace Kafelino.Controllers
             productListingModel.Products = await _context.Products
                 .Include(p => p.Weight)
                 .Include(p => p.TasteNotes)
-                .Select(p => new ProductDetailsViewModel
+                .Select(p => new ProductViewModel()
                 {
                     ProductId = p.ProductId,
                     Name = p.Name,
@@ -42,6 +42,7 @@ namespace Kafelino.Controllers
                     Brand = p.Brand,
                     Weight = p.Weight,
                     TasteNotes = p.TasteNotes,
+                    CreatedOn = p.CreatedOn
                 })
                 .ToListAsync();
             
@@ -91,7 +92,7 @@ namespace Kafelino.Controllers
             }
 
             productListingModel.Products = await query
-                .Select(p => new ProductDetailsViewModel
+                .Select(p => new ProductViewModel()
                 {
                     ProductId = p.ProductId,
                     Name = p.Name,
@@ -140,6 +141,23 @@ namespace Kafelino.Controllers
                 })
                 .FirstOrDefaultAsync();
 
+            product.SimilarProducts = await _context.Products
+                .Where(p => p.TasteNotes.Any(ts => ts.TasteNoteId == product.ProductId))
+                .Take(4)
+                .Select(p => new ProductViewModel()
+                {
+                    ProductId = p.ProductId,
+                    Name = p.Name,
+                    Description = p.Description,
+                    ImageUrl = p.ImageUrl,
+                    Price = p.Price,
+                    Quantity = p.Quantity,
+                    Brand = p.Brand,
+                    Weight = p.Weight,
+                    TasteNotes = p.TasteNotes,
+                })
+                .ToListAsync();
+            
             if (product == null)
             {
                 return NotFound();
@@ -171,7 +189,7 @@ namespace Kafelino.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CreateProductInputModel inputModel)
         {
-            if (ProductExists(inputModel.Name))
+            if (ProductExists(inputModel.Name)) 
             {
                 ModelState.AddModelError(string.Empty, "Продукт със същото име вече съществува");
             }
@@ -330,7 +348,7 @@ namespace Kafelino.Controllers
             return RedirectToAction(nameof(All));
         }
 
-        [HttpPost]
+        [HttpGet]
         [Authorize]
         public async Task<IActionResult> AddToCart(int productId)
         {
@@ -460,7 +478,7 @@ namespace Kafelino.Controllers
                 string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
 
                 // Път към папката wwwroot/Image
-                string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "Images");
+                string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "Images/products");
 
                 // Увери се, че папката съществува
                 if (!Directory.Exists(uploadPath))

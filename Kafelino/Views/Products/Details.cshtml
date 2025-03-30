@@ -4,70 +4,132 @@
     ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@* <div> *@
+@*     <a asp-action="Edit" asp-route-id="@Model?.ProductId">Edit</a> | *@
+@*     <a asp-action="Index">Back to List</a> *@
+@* </div> *@
 
-<h1>Details</h1>
+<div id="main-wrapper" class="section">
+    <div class="product-section section pt-110 pb-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12 mb-30">
+                    <div class="single-product-image product-image-slider fix">
+                        <div class="single-image">
+                            <img src="~/Images/products/@Model.ImageUrl" alt="" style="margin-top: -200px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="single-product-content col-lg-5 col-12 mb-30">
+                    <h1 class="title">@Model.Name - @Model.Weight.Value@Model.Weight.Unit.</h1>
+                    <span class="product-price">@Model.Price лв.</span>
+                    <div class="description">
+                        <p>@Model.Description</p>
+                    </div>
+                    <dl class="row">
+                        <dt class = "col-sm-4">
+                            Вкусови нотки: 
+                        </dt>
+                        <dd class = "col-sm-8">
+                            @foreach (var tasteNote in @Model.TasteNotes)
+                            {
+                                <b><span>@tasteNote.Name,</span></b>
+                            }
+                        </dd>
+                        <dt class = "col-sm-4">
+                            Марка:
+                        </dt>
+                        <dd class = "col-sm-8">
+                            <b>@Model.Brand</b>
+                        </dd>
+                    </dl>
+                    <div class="product-quantity-cart fix">
+                        @if (this.User.Identity.IsAuthenticated)
+                        {
+                            @if (Model.ProductInCart)
+                            {
+                                <a class="add-to-cart" asp-action="RemoveFromCart" asp-route-productId="@Model.ProductId">Премахни от количката</a>
+                            }
+                            @if (!Model.ProductInCart)
+                            {
+                                <a class="add-to-cart" asp-action="AddToCart" asp-route-productId="@Model.ProductId">Добави в количката</a>
+                                
+                            }
+                            @if (this.User.IsInRole("Admin"))
+                            {
+                                <div class="action-button fix">
+                                    <a class="edit-product-button-details" asp-action="Edit" asp-route-id="@Model.ProductId">Редактирай</a>
+                                    <a class="delete-product-button-details" asp-action="Delete" asp-route-id="@Model.ProductId">Изтрий</a>
+                                </div>    
+                            }
+                        }
+                    </div>
+                </div><!-- Product Content End -->
 
-<div>
-    <h4>Product</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ImageUrl)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ImageUrl)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Quantity)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Quantity)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Brand)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Brand)
-        </dd>
-    </dl>
-    
-    @if (this.User.Identity.IsAuthenticated)
-    {
-        @if (Model.ProductInCart)
-        {
-            <form method="get" asp-action="RemoveFromCart" asp-route-id="@Model.ProductId">
-                <button class="btn btn-main mt-20" type="submit">Премахни от количката</button>
-            </form>
-        }
-        @if (!Model.ProductInCart)
-        {
-            <form method="post" asp-action="AddToCart" asp-route-productId="@Model.ProductId">
-                <button type="submit" class="btn btn-info mt-20">Добави в количката</button>
-            </form>
-        }
-    }
-    
-    
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.ProductId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-30">
+                    <ul class="pro-info-tab-list nav">
+                        <li><a class="active" data-toggle="tab" href="#data-sheet">Описание</a></li>
+                    </ul>
+                </div>
+                <div class="tab-content col-12">
+                    <div class="pro-info-tab tab-pane active" id="data-sheet">
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr class="odd">
+                                <td>Вкусов профил</td>
+                                <td>
+                                    @foreach (var tasteNote in @Model.TasteNotes)
+                                    {
+                                        <b><span>@tasteNote.Name,</span></b>
+                                    }
+                                </td>
+                            </tr>
+                            <tr class="even">
+                                <td>Опаковка</td>
+                                <td>@Model.Weight.Value@Model.Weight.Unit.</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>Марка</td>
+                                <td>@Model.Brand</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-80">
+                <h2>Подобни продукти:</h2>
+                <div class="row">
+                    @foreach (var product in Model.SimilarProducts)
+                    {
+                        <div class="col-lg-3 col-md-6 col-12 mb-60">
+                            <div class="product">
+                                <div class="image">
+                                    <a asp-action="Details" asp-route-id="@product.ProductId" class="img">
+                                        <img src="~/Images/products/@product.ImageUrl" alt="Product">
+                                    </a>
+                                    <span class="label">НОВО</span>
+                                </div>
+                                <div class="content">
+                                    <div class="head fix">
+                                        <div class="title-category float-left">
+                                            <h5 class="title">
+                                                <a asp-action="Details" asp-route-id="@product.ProductId">@product.Name - @product.Weight.Value@product.Weight.Unit.</a>
+                                            </h5>
+                                            <a class="category">Кафе зърна</a>
+                                        </div>
+                                        <div class="price float-right">
+                                            <span class="new">@product.Price лв.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

@@ -1,5 +1,4 @@
 @using Microsoft.AspNetCore.Mvc.TagHelpers
-@using Microsoft.Data.SqlClient.DataClassification
 @model Kafelino.Models.Products.ProductListingViewModel
 
 @{
@@ -7,176 +6,265 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>All</h1>
-
-@if (this.User.IsInRole("Admin"))
-{
-    <p>
-        <a asp-action="Create">Create New</a>
-    </p>
-}
-@* @foreach (var weight in Model.Weights) *@
+@* <h1>All</h1> *@
+@* *@
+@* @if (this.User.IsInRole("Admin")) *@
 @* { *@
-@*     <a asp-action="FilterByWeight" asp-route-weightId="@weight.WeightId">@weight.Value@weight.Unit.</a> *@
+@*     <p> *@
+@*         <a asp-action="Create">Create New</a> *@
+@*     </p> *@
 @* } *@
-@* @foreach (var taste in Model.TasteNotes) *@
-@* { *@
-@*     <a asp-action="FilterByTasteNote" asp-route-tasteNoteId="@taste.TasteNoteId">@taste.Name</a> *@
-@* } *@
-@* @foreach (var brand in Model.Brands) *@
-@* { *@
-@*     <a asp-action="FilterByBrand" asp-route-brand="@brand">@brand</a> *@
-@* } *@
-@* <form asp-action="FilterByPrice"> *@
+@* *@
+@* <form method="get" asp-action="Filter" asp-controller="Products"> *@
 @*     <div class="form-group"> *@
-@*         <input type="number" asp-for="MinPrice"> *@
+@*         @foreach (var weight in Model.Filters.Weights) *@
+@*         { *@
+@*             var isChecked = weight.Value == Model.Filters.Weight ? "checked" : ""; *@
+@*              *@
+@*             <input type="radio" id="@weight" name="weight" value="@weight.Value" @isChecked/> *@
+@*             <label for="@weight">@weight.Value@weight.Unit</label> *@
+@*         } *@
 @*     </div> *@
 @*     <div class="form-group"> *@
-@*         <input type="number" asp-for="MaxPrice"> *@
+@*         @foreach (var taste in Model.Filters.TasteNotes) *@
+@*         { *@
+@*             var isChecked = taste.Name == Model.Filters.TasteNote ? "checked" : ""; *@
+@*              *@
+@*             <input type="radio" id="taste" name="TasteNote" value="@taste.Name" @isChecked/> *@
+@*             <label for="taste">@taste.Name</label> *@
+@*         } *@
+@*     </div> *@
+@*     <div class="form-group"> *@
+@*         @foreach (var brand in Model.Filters.Brands) *@
+@*         { *@
+@*             var isChecked = brand == Model.Filters.Brand ? "checked" : ""; *@
+@*              *@
+@*             <input type="radio" id="brand" name="brand" value="@brand" @isChecked/> *@
+@*             <label for="brand">@brand</label> *@
+@*         } *@
+@*     </div> *@
+@*     <div class="form-group"> *@
+@*         <input type="number" value="@Model.Filters.MinPrice" name="minPrice" asp-for="@Model.Filters.MinPrice"> *@
+@*     </div> *@
+@*     <div class="form-group"> *@
+@*         <input type="number" value="@Model.Filters.MaxPrice" name="maxPrice" asp-for="@Model.Filters.MaxPrice"> *@
 @*     </div> *@
 @*     <button type="submit" class="btn">=></button> *@
 @* </form> *@
+@* @if (@Model.Products.Count > 0) *@
+@* { *@
+@*     <table class="table"> *@
+@*     <thead> *@
+@*         <tr> *@
+@*             <th> *@
+@*                 Name *@
+@*             </th> *@
+@*             <th> *@
+@*                 Description *@
+@*             </th> *@
+@*             <th> *@
+@*                 Image *@
+@*             </th> *@
+@*             <th> *@
+@*                 Price *@
+@*             </th> *@
+@*             @if (this.User.IsInRole("Admin")) *@
+@*             { *@
+@*                 <th> *@
+@*                     Quantity *@
+@*                 </th> *@
+@*             } *@
+@*             <th> *@
+@*                 Brand *@
+@*             </th> *@
+@*             @if (this.User.IsInRole("Admin")) *@
+@*             { *@
+@*                 <th> *@
+@*                     IsDeleted *@
+@*                 </th> *@
+@*             } *@
+@*             @if (this.User.IsInRole("Admin")) *@
+@*             { *@
+@*                 <th> *@
+@*                     CreatedOn *@
+@*                 </th> *@
+@*             } *@
+@*             <th> *@
+@*                 Weight *@
+@*             </th> *@
+@*             <th> *@
+@*                 TasteNotes *@
+@*             </th> *@
+@*             <th></th> *@
+@*         </tr> *@
+@*     </thead> *@
+@*     <tbody> *@
+@*     @foreach (var item in Model.Products) *@
+@*     { *@
+@*         <tr> *@
+@*             <td> *@
+@*                 @Html.DisplayFor(modelItem => item.Name) *@
+@*             </td> *@
+@*             <td> *@
+@*                 @Html.DisplayFor(modelItem => item.Description) *@
+@*             </td> *@
+@*             <td> *@
+@*                 <img style="width: 80px; height: 80px" src="@item.ImageUrl" alt=""> *@
+@*             </td> *@
+@*             <td> *@
+@*                 @Html.DisplayFor(modelItem => item.Price) *@
+@*             </td> *@
+@*             @if (this.User.IsInRole("Admin")) *@
+@*             { *@
+@*                 <td> *@
+@*                     @Html.DisplayFor(modelItem => item.Quantity) *@
+@*                 </td> *@
+@*             } *@
+@*             <td> *@
+@*                 @Html.DisplayFor(modelItem => item.Brand) *@
+@*             </td> *@
+@*             @if (this.User.IsInRole("Admin")) *@
+@*             { *@
+@*                 <td> *@
+@*                     @Html.DisplayFor(modelItem => item.IsDeleted) *@
+@*                 </td> *@
+@*             } *@
+@*             @if (this.User.IsInRole("Admin")) *@
+@*             { *@
+@*                 <td> *@
+@*                     @Html.DisplayFor(modelItem => item.CreatedOn) *@
+@*                 </td> *@
+@*             } *@
+@*             <td> *@
+@*                 @Html.DisplayFor(modelItem => item.Weight.Value) *@
+@*                 @Html.DisplayFor(modelItem => item.Weight.Unit) *@
+@*             </td> *@
+@*             <td> *@
+@*                 @String.Join(", ", @item.TasteNotes.Select(ts => ts.Name)) *@
+@*             </td> *@
+@*             <td> *@
+@*                 <a asp-action="Edit" asp-route-id="@item.ProductId">Edit</a> | *@
+@*                 <a asp-action="Details" asp-route-id="@item.ProductId">Details</a> | *@
+@*                 <a asp-action="Delete" asp-route-id="@item.ProductId">Delete</a> *@
+@*             </td> *@
+@*         </tr> *@
+@*     } *@
+@*     </tbody> *@
+@* </table> *@
+@* } *@
+@* @if (Model.Products.Count == 0) *@
+@* { *@
+@*     <h2>Няма продукти</h2> *@
+@* } *@
 
-<form method="get" asp-action="Filter" asp-controller="Products">
-    <div class="form-group">
-        @foreach (var weight in Model.Filters.Weights)
-        {
-            var isChecked = weight.Value == Model.Filters.Weight ? "checked" : "";
-            
-            <input type="radio" id="@weight" name="weight" value="@weight.Value" @isChecked/>
-            <label for="@weight">@weight.Value@weight.Unit</label>
-        }
-    </div>
-    <div class="form-group">
-        @foreach (var taste in Model.Filters.TasteNotes)
-        {
-            var isChecked = taste.Name == Model.Filters.TasteNote ? "checked" : "";
-            
-            <input type="radio" id="taste" name="TasteNote" value="@taste.Name" @isChecked/>
-            <label for="taste">@taste.Name</label>
-        }
-    </div>
-    <div class="form-group">
-        @foreach (var brand in Model.Filters.Brands)
-        {
-            var isChecked = brand == Model.Filters.Brand ? "checked" : "";
-            
-            <input type="radio" id="brand" name="brand" value="@brand" @isChecked/>
-            <label for="brand">@brand</label>
-        }
-    </div>
-    <div class="form-group">
-        <input type="number" value="@Model.Filters.MinPrice" name="minPrice" asp-for="@Model.Filters.MinPrice">
-    </div>
-    <div class="form-group">
-        <input type="number" value="@Model.Filters.MaxPrice" name="maxPrice" asp-for="@Model.Filters.MaxPrice">
-    </div>
-    <button type="submit" class="btn">=></button>
-</form>
-@if (@Model.Products.Count > 0)
-{
-    <table class="table">
-    <thead>
-        <tr>
-            <th>
-                Name
-            </th>
-            <th>
-                Description
-            </th>
-            <th>
-                Image
-            </th>
-            <th>
-                Price
-            </th>
-            @if (this.User.IsInRole("Admin"))
-            {
-                <th>
-                    Quantity
-                </th>
-            }
-            <th>
-                Brand
-            </th>
-            @if (this.User.IsInRole("Admin"))
-            {
-                <th>
-                    IsDeleted
-                </th>
-            }
-            @if (this.User.IsInRole("Admin"))
-            {
-                <th>
-                    CreatedOn
-                </th>
-            }
-            <th>
-                Weight
-            </th>
-            <th>
-                TasteNotes
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-    @foreach (var item in Model.Products)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                <img style="width: 80px; height: 80px" src="@item.ImageUrl" alt="">
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            @if (this.User.IsInRole("Admin"))
-            {
-                <td>
-                    @Html.DisplayFor(modelItem => item.Quantity)
-                </td>
-            }
-            <td>
-                @Html.DisplayFor(modelItem => item.Brand)
-            </td>
-            @if (this.User.IsInRole("Admin"))
-            {
-                <td>
-                    @Html.DisplayFor(modelItem => item.IsDeleted)
-                </td>
-            }
-            @if (this.User.IsInRole("Admin"))
-            {
-                <td>
-                    @Html.DisplayFor(modelItem => item.CreatedOn)
-                </td>
-            }
-            <td>
-                @Html.DisplayFor(modelItem => item.Weight.Value)
-                @Html.DisplayFor(modelItem => item.Weight.Unit)
-            </td>
-            <td>
-                @String.Join(", ", @item.TasteNotes.Select(ts => ts.Name))
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ProductId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ProductId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ProductId">Delete</a>
-            </td>
-        </tr>
-    }
-    </tbody>
-</table>
-}
-@if (Model.Products.Count == 0)
-{
-    <h2>Няма продукти</h2>
-}
+<div id="main-wrapper" class="section">
+    <div class="product-section section pt-120 pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12 mb-60">
+                    <form method="get" asp-action="Filter" asp-controller="Products">
+                        @if (this.User.IsInRole("Admin"))
+                        {
+                            <a class="btn btn-filter grey-button mb-8" asp-controller="Products" asp-action="Create">Добави нов</a>
+                        }
+                        <button type="submit" class="btn-filter">Филтрирай</button>
+                        <div class="form-group">
+                            @foreach (var weight in Model.Filters.Weights)
+                            {
+                                var isChecked = weight.Value == Model.Filters.Weight ? "checked" : "";
+
+                                <input type="radio" id="@weight" name="weight" value="@weight.Value" @isChecked/>
+                                <label for="@weight">@weight.Value@weight.Unit</label>
+                                <br/>
+                            }
+                        </div>
+                        <div class="form-group">
+                            @foreach (var taste in Model.Filters.TasteNotes)
+                            {
+                                var isChecked = taste.Name == Model.Filters.TasteNote ? "checked" : "";
+
+                                <input type="radio" id="taste" name="TasteNote" value="@taste.Name" @isChecked/>
+                                <label for="taste">@taste.Name</label>
+                                <br/>
+                            }
+                        </div>
+                        <div class="form-group">
+                            @foreach (var brand in Model.Filters.Brands)
+                            {
+                                var isChecked = brand == Model.Filters.Brand ? "checked" : "";
+
+                                <input type="radio" id="brand" name="brand" value="@brand" @isChecked/>
+                                <label for="brand">@brand</label>
+                                <br/>
+                            }
+                        </div>
+                        <div class="form-group">
+                            <input type="number" value="@Model.Filters.MinPrice" name="minPrice" asp-for="@Model.Filters.MinPrice">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" value="@Model.Filters.MaxPrice" name="maxPrice" asp-for="@Model.Filters.MaxPrice">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-9 col-md-6 col-12 mb-60">
+                    <div class="row">
+                        @foreach (var product in Model.Products)
+                        {
+                            <div class="col-lg-4 col-md-6 col-12 mb-60">
+                                <div class="product">
+                                    <div class="image">
+                                        <a asp-action="Details" asp-route-id="@product.ProductId" class="img">
+                                            <img src="~/Images/products/@product.ImageUrl" alt="Product">
+                                        </a>
+                                        @if ((DateTime.Now - product.CreatedOn).TotalDays < 14)
+                                        {
+                                            <span class="label">НОВО</span> 
+                                        }
+                                    </div>
+                                    <div class="content">
+                                        <div class="head fix">
+                                            <div class="title-category float-left">
+                                                <h5 class="title">
+                                                    <a asp-action="Details" asp-route-id="@product.ProductId">@product.Name - @product.Weight.Value@product.Weight.Unit.</a>
+                                                </h5>
+                                                <a class="category">Кафе зърна</a>
+                                            </div>
+                                            <div class="price float-right">
+                                                <span class="new">@product.Price лв.</span>
+                                            </div>
+                                        </div>
+                                        <div class="action-button fix">
+                                            <a class="add-to-cart-all" asp-action="AddToCart" asp-route-productId="@product.ProductId">Добави в количката</a>
+                                            @if (this.User.IsInRole("Admin"))
+                                            {
+                                                <a class="edit-product-button" asp-action="Edit" asp-route-id="@product.ProductId">Редактирай</a>
+                                                <a class="delete-product-button" asp-action="Delete" asp-route-id="@product.ProductId">Изтрий</a>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <!-- Pagination Start -->
+                <div class="pagination col-12 mt-20">
+                    <ul>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li class="arrows"><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                </div><!-- Pagination End -->
+
+            </div><!-- Product Wrapper End-->
+
+        </div>
+    </div><!-- Product Section End-->
+</div>
+
 
 

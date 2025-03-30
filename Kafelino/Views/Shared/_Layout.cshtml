@@ -1,53 +1,272 @@
-﻿<!DOCTYPE html>
+﻿@using Kafelino.Domain
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@inject SignInManager<User> SignInManager
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Kafelino</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <meta name="description" content="">
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
+    @* <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> *@
+    @* <link rel="stylesheet" href="~/Kafelino.styles.css" asp-append-version="true" /> *@
+
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <!-- CSS
+	============================================ -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="~/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/ionicons.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="~/css/plugins.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="~/css/site.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Kafelino.styles.css" asp-append-version="true" />
+    <!-- Modernizer JS -->
+    <script src="~/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Kafelino</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Начало</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="All">Продукти</a>
-                        </li>
-                    </ul>
-                    <partial name="_LoginPartial" />
+    @* <header> *@
+    @*     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"> *@
+    @*         <div class="container-fluid"> *@
+    @*             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Kafelino</a> *@
+    @*             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" *@
+    @*                     aria-expanded="false" aria-label="Toggle navigation"> *@
+    @*                 <span class="navbar-toggler-icon"></span> *@
+    @*             </button> *@
+    @*             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between"> *@
+    @*                 <ul class="navbar-nav flex-grow-1"> *@
+    @*                     <li class="nav-item"> *@
+    @*                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Начало</a> *@
+    @*                     </li> *@
+    @*                     <li class="nav-item"> *@
+    @*                         <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="All">Продукти</a> *@
+    @*                     </li> *@
+    @*                 </ul> *@
+    @*                 <ul class="navbar-nav"> *@
+    @*                     @if (SignInManager.IsSignedIn(User)) *@
+    @*                     { *@
+    @*                         <li class="nav-item"> *@
+    @*                             <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name!</a> *@
+    @*                         </li> *@
+    @*                         <li class="nav-item"> *@
+    @*                             <a class="nav-link text-dark" asp-controller="Products" asp-action="Cart"><i class="tf-ion-android-cart"></i> Количка</a> *@
+    @*                         </li> *@
+    @*                         @if (this.User.IsInRole("Admin")) *@
+    @*                         { *@
+    @*                             <li class="dropdown"> *@
+    @*                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Администрация</button> *@
+    @*                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink"> *@
+    @*                                     <li><a class="dropdown-item" asp-controller="Products" asp-action="Create">Добави продукт</a></li> *@
+    @*                                     <li><a class="dropdown-item" asp-controller="Products" asp-action="All">Продукти</a></li> *@
+    @*                                     <li><a class="dropdown-item" asp-controller="Users" asp-action="Add">Добави потребител</a></li> *@
+    @*                                     <li><a class="dropdown-item" asp-controller="Users" asp-action="All">Потребители</a></li> *@
+    @*                                     <li><a class="dropdown-item" asp-controller="Orders" asp-action="All">Поръчки</a></li> *@
+    @*                                     <li><a class="dropdown-item" asp-controller="TasteNotes" asp-action="All">Вкусови нотки</a></li> *@
+    @*                                     <li><a class="dropdown-item" asp-controller="Weights" asp-action="All">Разфасовки</a></li> *@
+    @*                                 </ul> *@
+    @*                             </li> *@
+    @*                         } *@
+    @*                         @if (this.User.Identity.IsAuthenticated && !this.User.IsInRole("Admin")) *@
+    @*                         { *@
+    @*                             <li class="nav-item"> *@
+    @*                                 <a class="nav-link text-dark" asp-controller="Orders" asp-action="Mine">Поръчки</a> *@
+    @*                             </li> *@
+    @*                         } *@
+    @*                         <li class="nav-item"> *@
+    @*                             <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })"> *@
+    @*                                 <button type="submit" class="nav-link btn btn-link text-dark">Logout</button> *@
+    @*                             </form> *@
+    @*                         </li> *@
+    @*                     } *@
+    @*                     else *@
+    @*                     { *@
+    @*                         <li class="nav-item"> *@
+    @*                             <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a> *@
+    @*                         </li> *@
+    @*                         <li class="nav-item"> *@
+    @*                             <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a> *@
+    @*                         </li> *@
+    @*                     } *@
+    @*                 </ul> *@
+    @*             </div> *@
+    @*         </div> *@
+    @*     </nav> *@
+    @* </header> *@
+    <div class="header-section section">
+        <div class="header-bottom section">
+            <div class="container">
+                <div class="row header-bottom-wrapper text-center">
+                    <div class="">
+                        <a asp-controller="Home" asp-action="Index" class="logo">
+                            <img style="height: 80px" src="~/Images/logo-kafelino.png" alt="logo"><span>Кафелино</span>
+                        </a>
+                    </div>
+                    <nav id="main-menu" class="main-menu ">
+                        <ul>
+                            <li class="active">
+                                <a asp-area="" asp-controller="Home" asp-action="Index">Начало</a>
+                            </li>
+                            <li><a asp-area="" asp-controller="Products" asp-action="All">Магазин</a>
+                                <ul class="sub-menu">
+                                    <li><a asp-area="" asp-controller="Products" asp-action="All">Кафета</a></li>
+                                    <li><a asp-area="" asp-controller="Products" asp-action="All">Аксесоари</a></li>
+                                </ul>
+                            </li>
+                            @if (this.User.IsInRole("Admin"))
+                            {
+                                <li><a>Администрация</a>
+                                    <ul class="sub-menu">
+                                        <li><a asp-controller="Products" asp-action="Create">Добави продукт</a></li>
+                                        <li><a asp-controller="Products" asp-action="All">Продукти</a></li>
+                                        <li><a asp-controller="Users" asp-action="Add">Добави потребител</a></li>
+                                        <li><a asp-controller="Users" asp-action="All">Потребители</a></li>
+                                        <li><a asp-controller="Orders" asp-action="All">Поръчки</a></li>
+                                        <li><a asp-controller="TasteNotes" asp-action="All">Вкусови нотки</a></li>
+                                        <li><a asp-controller="Weights" asp-action="All">Разфасовки</a></li>
+                                    </ul>
+                                </li>
+                            }
+                            <li><a href="about.html">За нас</a></li>
+                            <li><a href="contact.html">Контакти</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mobile-menu section d-md-none"></div>
+                    <div class="account-menu">
+                        <ul>
+                            @if (!this.User.Identity.IsAuthenticated) { 
+                                <li class=""> 
+                                    <a class="" asp-area="Identity" asp-page="/Account/Register">Регистрирай се</a> 
+                                </li> 
+                                <li class=""> 
+                                     <a class="" asp-area="Identity" asp-page="/Account/Login">Влез</a> 
+                                </li> 
+                            }
+                            else
+                            {
+                                <li><a href="#">Моят профил</a></li>
+                                <li>
+                                    <a  asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">Излез от профил</a>
+                                    @* <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })"> *@
+                                    @*     <button type="submit" class="">Излез от профил</button> *@
+                                    @* </form> *@
+                                </li> 
+                                <li><a asp-controller="Products" asp-action="Cart"><img src="~/Images/trolley.png" style="width: 20px; height: 20px; margin-top: -6px;" alt=""></a></li>
+                            }
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+        </div>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - Kafelino - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
+@RenderBody()
+
+    <!-- Footer Section Start-->
+    @* style="background-image: url(Images/bg/footer-bg.png) *@
+    <div class="footer-section section bg-dark">
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+
+                    <!-- Footer Top Start -->
+                    <div class="footer-top section pt-80 pb-50">
+                        <div class="row">
+
+                            <!-- Footer Widget -->
+                            <div class="footer-widget col-lg-4 col-md-6 col-12 mb-40">
+
+                                <img class="footer-logo" src="Images/footer-logo.png" alt="logo">
+                                <p>Contrary to popular belief, Lorem Ipsum is nosimply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over Lorem Ipsum is nosimply random text.</p>
+
+                            </div>
+
+                            <!-- Footer Widget -->
+                            <div class="footer-widget col-lg-2 col-md-3 col-12 mb-40">
+
+                                <h4 class="widget-title">Information</h4>
+
+                                <ul>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Team member</a></li>
+                                    <li><a href="#">Clinet</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                </ul>
+
+                            </div>
+
+                            <!-- Footer Widget -->
+                            <div class="footer-widget col-lg-2 col-md-3 col-12 mb-40">
+
+                                <h4 class="widget-title">Categories</h4>
+
+                                <ul>
+                                    <li><a href="#">Costumes</a></li>
+                                    <li><a href="#">Lights</a></li>
+                                    <li><a href="#">Lights</a></li>
+                                    <li><a href="#">Christmas Trees</a></li>
+                                    <li><a href="#">Decorations</a></li>
+                                </ul>
+
+                            </div>
+
+                            <!-- Footer Widget -->
+                            <div class="footer-widget col-lg-4 col-md-6 col-12 mb-40">
+
+                                <h4 class="widget-title">Contact Us</h4>
+
+                                <ul>
+                                    <li><span>Address:</span> ur address goes here,street Crossroad 123</li>
+                                    <li><span>Phone:</span> +99 859 658 589 . +69 587 456 25</li>
+                                    <li><span>Eax:</span> +55 784 7585 . + 985 698 586</li>
+                                    <li><span>Email:</span> christ@email.com</li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div><!-- Footer Top End -->
+
+                    <!-- Footer Bottom Start -->
+                    <div class="footer-bottom section text-center">
+                        <p><a href="templateshub.net">Templates Hub</a></p>
+                    </div><!-- Footer Bottom End -->
+
+                </div>
+            </div>
+
+        </div>
+    </div><!-- Footer Section End-->
+    
+    
+    <!-- jQuery JS -->
+    <script src="~/js/vendor/jquery-1.12.0.min.js"></script>
+    <!-- Popper JS -->
+    <script src="~/js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="~/js/bootstrap.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="~/js/plugins.js"></script>
+    <!-- Ajax Mail JS -->
+    <script src="~/js/ajax-mail.js"></script>
+    <!-- Main JS -->
+    <script src="~/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

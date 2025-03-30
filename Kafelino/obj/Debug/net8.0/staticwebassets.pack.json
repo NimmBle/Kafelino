@@ -41,6 +41,46 @@
       "PackagePath": "staticwebassets\\Images\\808dbeab-4b97-49be-bff3-e8998f4ab9c6.png"
     },
     {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\1.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\2.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-1.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner\\coffee-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-beans-1.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner\\coffee-beans-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-beans-small.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner\\coffee-beans-small.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-beans.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner\\coffee-beans.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-beans.png",
+      "PackagePath": "staticwebassets\\Images\\banner\\coffee-beans.png"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\tools-1.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner\\tools-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\tools-2.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner\\tools-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\tools.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner\\tools.jpg"
+    },
+    {
       "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\bf30a737-7662-4eb5-b5fc-d527a62dd60e.png",
       "PackagePath": "staticwebassets\\Images\\bf30a737-7662-4eb5-b5fc-d527a62dd60e.png"
     },
@@ -69,6 +109,82 @@
       "PackagePath": "staticwebassets\\Images\\d7416031-467b-45fa-adbf-0c05e654c4bd.jpg"
     },
     {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\favicon.ico",
+      "PackagePath": "staticwebassets\\Images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\1.jpg",
+      "PackagePath": "staticwebassets\\Images\\hero\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\2.jpg",
+      "PackagePath": "staticwebassets\\Images\\hero\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\hero-image-1.jpg",
+      "PackagePath": "staticwebassets\\Images\\hero\\hero-image-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\hero-image-2.jpg",
+      "PackagePath": "staticwebassets\\Images\\hero\\hero-image-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\hero-image-dark.jpg",
+      "PackagePath": "staticwebassets\\Images\\hero\\hero-image-dark.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\hero-image.jpg",
+      "PackagePath": "staticwebassets\\Images\\hero\\hero-image.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\logo-kafelino.png",
+      "PackagePath": "staticwebassets\\Images\\logo-kafelino.png"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-1.webp",
+      "PackagePath": "staticwebassets\\Images\\products\\product-1.webp"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-2.webp",
+      "PackagePath": "staticwebassets\\Images\\products\\product-2.webp"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-3.webp",
+      "PackagePath": "staticwebassets\\Images\\products\\product-3.webp"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-4.webp",
+      "PackagePath": "staticwebassets\\Images\\products\\product-4.webp"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-5.webp",
+      "PackagePath": "staticwebassets\\Images\\products\\product-5.webp"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-6.webp",
+      "PackagePath": "staticwebassets\\Images\\products\\product-6.webp"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\trolley.png",
+      "PackagePath": "staticwebassets\\Images\\trolley.png"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\ionicons.min.css",
+      "PackagePath": "staticwebassets\\css\\ionicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\plugins.css",
+      "PackagePath": "staticwebassets\\css\\plugins.css"
+    },
+    {
       "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -77,8 +193,36 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\ajax-mail.js",
+      "PackagePath": "staticwebassets\\js\\ajax-mail.js"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\map.js",
+      "PackagePath": "staticwebassets\\js\\map.js"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\js\\plugins.js"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\vendor\\jquery-1.12.0.min.js",
+      "PackagePath": "staticwebassets\\js\\vendor\\jquery-1.12.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\vendor\\modernizr-2.8.3.min.js",
+      "PackagePath": "staticwebassets\\js\\vendor\\modernizr-2.8.3.min.js"
     },
     {
       "Id": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\bootstrap\\LICENSE",

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kafelino")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e06144176ac1a74fcb5df32a2e15dabc2162157")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79b3551f276456af1d17f0d575d5ddd895ba5919")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kafelino")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kafelino")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

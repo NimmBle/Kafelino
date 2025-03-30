@@ -6,42 +6,41 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Create</h1>
-
-<h4>Product</h4>
-<hr />
-<div class="row">
+<div class="row" style="
+    justify-content: center;
+    margin-block: 160px 80px">
     <div class="col-md-4">
         <form asp-action="Create" enctype="multipart/form-data">
+            <h2>Създаване на продукт</h2>
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
+                <input asp-for="Name" class="form-control"/>
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
+                <input asp-for="Description" class="form-control"/>
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Image" class="control-label"></label>
-                <input asp-for="Image" class="form-control" />
+                <input asp-for="Image" class="form-control"/>
                 <span asp-validation-for="Image" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
+                <input asp-for="Price" class="form-control"/>
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Quantity" class="control-label"></label>
-                <input asp-for="Quantity" class="form-control" />
+                <input asp-for="Quantity" class="form-control"/>
                 <span asp-validation-for="Quantity" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Brand" class="control-label"></label>
-                <input asp-for="Brand" class="form-control" />
+                <input asp-for="Brand" class="form-control"/>
                 <span asp-validation-for="Brand" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -56,7 +55,7 @@
             </div>
             <div class="form-group">
                 <label for="TasteNotes">Вкусови нотки</label>
-                <select asp-for="TasteNoteIds" class="form-control js-example-basic-multiple" multiple="multiple" name="TasteNoteIds[]">
+                <select asp-for="TasteNoteIds" class="form-control js-example-basic-multiple w-100" multiple="multiple" name="TasteNoteIds[]">
                     @foreach (TasteNote tasteNote in ViewBag.TasteNotes)
                     {
                         <option value="@tasteNote.TasteNoteId">@tasteNote.Name</option>
@@ -65,18 +64,9 @@
                 <span asp-validation-for="TasteNoteIds" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary mt-4" />
+                <input type="submit" value="Създай" class="beige-button btn mt-4 w-100"/>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-<script>
-    $(document).ready(function() {
-        $(".js-example-basic-multiple").select2(); // Initialize Select2 if used
-    });
-</script>

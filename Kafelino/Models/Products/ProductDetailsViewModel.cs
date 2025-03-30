@@ -30,5 +30,7 @@ public class ProductDetailsViewModel
     public ICollection<TasteNote> TasteNotes { get; set; } = new HashSet<TasteNote>();
 
     public ICollection<OrderProduct> OrderProducts { get; set; } = new HashSet<OrderProduct>();
+    
+    public ICollection<ProductViewModel> SimilarProducts { get; set; } = new HashSet<ProductViewModel>();
 
 }

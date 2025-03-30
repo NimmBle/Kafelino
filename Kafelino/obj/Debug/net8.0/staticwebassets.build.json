@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "maTPFI2U9sNJD4ULYSczCiy5R9ntICMfYB903rwtsvs=",
+  "Hash": "3T3uZqmaQb7mzlM/95iH1ua/nHTK9sZtpdby6e+xEF0=",
   "Source": "Kafelino",
   "BasePath": "_content/Kafelino",
   "Mode": "Default",
@@ -1319,6 +1319,90 @@
       "OriginalItemSpec": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Kafelino.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\bootstrap.min.css",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "css/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o2wlpouf80",
+      "Integrity": "YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\font-awesome.min.css",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "css/font-awesome.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l3jeywpnpe",
+      "Integrity": "MYo334mzeaRKXFMa/J2LMcl0gSLd0I8V7acTgUtqOCs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\font-awesome.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\ionicons.min.css",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "css/ionicons.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pd19k2q01p",
+      "Integrity": "PevYXwSh3MBHTgqN9M5RIoPh4pkA8KVNPiUYi+2F89Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\ionicons.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\plugins.css",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "css/plugins#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m3mq0erq8s",
+      "Integrity": "YhrZlnZeP5sfOa1F0WXEiuyypK31KytNe/T3buCaSPQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\plugins.css"
+    },
+    {
       "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\site.css",
       "SourceId": "Kafelino",
       "SourceType": "Discovered",
@@ -1333,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c2tiyv64ts",
-      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
+      "Fingerprint": "8gbrqok2zt",
+      "Integrity": "uOxNu6JKaL8gFCyIyM9/SN0QwEekWQDYcM0vG8sHSgc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1550,6 +1634,216 @@
       "OriginalItemSpec": "wwwroot\\Images\\808dbeab-4b97-49be-bff3-e8998f4ab9c6.png"
     },
     {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\1.jpg",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/banner/1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oimxmp395y",
+      "Integrity": "QDoQiNbAbY11UflGh98WTQfErmwFMNPmDt55lY82+V4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\banner\\1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\2.jpg",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/banner/2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4ygndm0pqd",
+      "Integrity": "dMVlMfjZ2QWVdAK8FTYIXj/cSi5pLu9SoUMNla3zsOI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\banner\\2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-1.jpg",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/banner/coffee-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "73zfira68a",
+      "Integrity": "Yx202QMIeNpjQ4vtq0OD48bZsKxEM5cAlDVYZEo9uho=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\banner\\coffee-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-beans-1.jpg",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/banner/coffee-beans-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z6f2wx1ecq",
+      "Integrity": "a40vExyGP1paDZq3xqjreYcn6bL8yrxi8OICVWTBRxM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\banner\\coffee-beans-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-beans-small.jpg",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/banner/coffee-beans-small#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qknjt4jppg",
+      "Integrity": "GjubmWsMVlFJy28IwNFP5/b5dVce85RFN1M0HqQ4MiA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\banner\\coffee-beans-small.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-beans.jpg",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/banner/coffee-beans#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kyn1n6b3ik",
+      "Integrity": "dBFvXzsgEXThQaWy7J9XAEfuEpV0RA4+FioSwETFK9c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\banner\\coffee-beans.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-beans.png",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/banner/coffee-beans#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lvkvc3grmg",
+      "Integrity": "j0yerNlrSzKVjlenHNI80B2cJ0G8eyjBl6EaeUEta50=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\banner\\coffee-beans.png"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\tools-1.jpg",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/banner/tools-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q3b1m58g0p",
+      "Integrity": "dnjahKhFEcZaheCX3vPFKDH5vrsXmaxtR/33/Q9yJlY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\banner\\tools-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\tools-2.jpg",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/banner/tools-2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6qbl4ku22d",
+      "Integrity": "Yh1fyVmNTW+KavoZRyehg8/C1co84moLU2q5yR+lwdo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\banner\\tools-2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\tools.jpg",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/banner/tools#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y819e20ele",
+      "Integrity": "kgQnySKQLeUjZ6fHmhRaHK2p5Bnub8+MAdvcJfSgvoc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\banner\\tools.jpg"
+    },
+    {
       "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\bf30a737-7662-4eb5-b5fc-d527a62dd60e.png",
       "SourceId": "Kafelino",
       "SourceType": "Discovered",
@@ -1697,12 +1991,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\d7416031-467b-45fa-adbf-0c05e654c4bd.jpg"
     },
     {
-      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\favicon.ico",
       "SourceId": "Kafelino",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
       "BasePath": "_content/Kafelino",
-      "RelativePath": "js/site#[.{fingerprint}]?.js",
+      "RelativePath": "Images/favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1711,11 +2005,473 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ie2ny2sc99",
-      "Integrity": "Fiq1PJSvEdbeMNoDGd3WEzccRJ1p0Jp1LYituxMNJKg=",
+      "Fingerprint": "qam996dp9n",
+      "Integrity": "3pXFHENffD6HwO6vpiwUz2fCnOmEjD4yTeD+6h8XLdM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
+      "OriginalItemSpec": "wwwroot\\Images\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\1.jpg",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/hero/1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8zf4aichnd",
+      "Integrity": "HAQLiIxg3PebllmRJxBkdy+yYg9XypE27G79V6PwIXI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\hero\\1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\2.jpg",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/hero/2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yc4cbq8qo8",
+      "Integrity": "7stF+MKn5hOl383JnXMvMQJMD7SGS3ude9FWFiubeU4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\hero\\2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\hero-image-1.jpg",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/hero/hero-image-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aw0h0n21hg",
+      "Integrity": "yjqesK2bK5dDKBxaYWLxv95UR2lVz1lwZgcAb1BD5+A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\hero\\hero-image-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\hero-image-2.jpg",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/hero/hero-image-2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1ls5ktexi3",
+      "Integrity": "C5gPZNnDabOmljv6a6K2D9PWYyqaUCCSFguh5Wxgtic=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\hero\\hero-image-2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\hero-image-dark.jpg",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/hero/hero-image-dark#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lbd1t6izal",
+      "Integrity": "se6XTxEwlAAVeimI445FxdwZ+lkWISfRfo7xCFZicPI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\hero\\hero-image-dark.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\hero-image.jpg",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/hero/hero-image#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dfiyr1uiec",
+      "Integrity": "N2+W9IIGlYuW8XDwo2BnFwTa/SHf5Wt7qSNOpwE4lfs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\hero\\hero-image.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\logo-kafelino.png",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/logo-kafelino#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4tf167f9nb",
+      "Integrity": "uIdFZiFiqr7zWZBpRtA3d9AtVWK6xPJCFtWm1Zy8zQc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\logo-kafelino.png"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-1.webp",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/products/product-1#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jo7at2g6t2",
+      "Integrity": "nbXAuIWzGLrDkCWhSoqVNUOO5Nwd8BEwVG4n23CchyE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\products\\product-1.webp"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-2.webp",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/products/product-2#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "br2ychawvd",
+      "Integrity": "ia0tRxA1fHuCSPkCFfyZbT42K3hvBDkWziwhEy9rbog=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\products\\product-2.webp"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-3.webp",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/products/product-3#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xl86z6iiz1",
+      "Integrity": "FexLg18acmsOuAdDwTD3ebmacewVvlmUI4vHu3Q7ovA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\products\\product-3.webp"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-4.webp",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/products/product-4#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j18qgk2q1j",
+      "Integrity": "NysPwoahgMpEK0tWqghbLBTySYfyB3ToyCNFZsm83RQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\products\\product-4.webp"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-5.webp",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/products/product-5#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f4imwrhce5",
+      "Integrity": "wX4frL/GhBmUEahloaG6nWWnRvUijIlguNTco9oq43E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\products\\product-5.webp"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-6.webp",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/products/product-6#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w69tjgbht8",
+      "Integrity": "yPZq7wFiChBDa8XsrRyGHxxI5CsLD8Q0qKu4pmTUI+k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\products\\product-6.webp"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\trolley.png",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "Images/trolley#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "liduie8rh4",
+      "Integrity": "E9adkaUDhXmCFdeUCuhVgtucXwrTVs8Cq2eYhXV/yVg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\trolley.png"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\ajax-mail.js",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "js/ajax-mail#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vjzby3e38g",
+      "Integrity": "RYlKra55pEH954m7Lhizo/lylXqVDJn+YUcOQYf11vA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\ajax-mail.js"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\bootstrap.min.js",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "js/bootstrap.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m8so7gk97h",
+      "Integrity": "CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\main.js",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "js/main#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oek8wm6sgx",
+      "Integrity": "ULHR/WTr+jA6DToarF1fKNUw1QrxAFVT0AmgIs6Ae8s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\main.js"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\map.js",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "js/map#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vic0gn0px8",
+      "Integrity": "mbR73v2EkK2ukokphkNRI6CdbkLKa2N3ym+JLuqgPFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\map.js"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\plugins.js",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "js/plugins#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cf011imy9n",
+      "Integrity": "aMGec4dmK/QlC+aMZ6BiIn7OOfgJRCLg0eniVSY0NmU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\plugins.js"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\popper.min.js",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "js/popper.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6tfrm3o759",
+      "Integrity": "NnXyJvmFtk7qauhUTVSWoy0ZmTquGsSj+hASY+8yBvc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\popper.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\vendor\\jquery-1.12.0.min.js",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "js/vendor/jquery-1.12.0.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b13wvdzdm3",
+      "Integrity": "Xxq2X+KtazgaGuA2cWR1v3jJsuMJUozyIXDB3e793L8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\vendor\\jquery-1.12.0.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\vendor\\modernizr-2.8.3.min.js",
+      "SourceId": "Kafelino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\",
+      "BasePath": "_content/Kafelino",
+      "RelativePath": "js/vendor/modernizr-2.8.3.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "t62jrl3z6l",
+      "Integrity": "Kw+FJuehsPH7Quis7DwedzehowZbdz69E6SSlS9VeWc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\vendor\\modernizr-2.8.3.min.js"
     },
     {
       "Identity": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
@@ -2917,8 +3673,8 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.c2tiyv64ts.css",
-      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\site.css",
+      "Route": "css/bootstrap.min.css",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2927,7 +3683,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "155758"
         },
         {
           "Name": "Content-Type",
@@ -2935,11 +3691,48 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Mar 2025 09:28:12 GMT"
+          "Value": "Wed, 26 Mar 2025 19:24:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap.min.o2wlpouf80.css",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "155758"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:24:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2949,7 +3742,298 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
+          "Value": "o2wlpouf80"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="
+        }
+      ]
+    },
+    {
+      "Route": "css/font-awesome.min.css",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\font-awesome.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31023"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MYo334mzeaRKXFMa/J2LMcl0gSLd0I8V7acTgUtqOCs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:24:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MYo334mzeaRKXFMa/J2LMcl0gSLd0I8V7acTgUtqOCs="
+        }
+      ]
+    },
+    {
+      "Route": "css/font-awesome.min.l3jeywpnpe.css",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\font-awesome.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31023"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MYo334mzeaRKXFMa/J2LMcl0gSLd0I8V7acTgUtqOCs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:24:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l3jeywpnpe"
+        },
+        {
+          "Name": "label",
+          "Value": "css/font-awesome.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MYo334mzeaRKXFMa/J2LMcl0gSLd0I8V7acTgUtqOCs="
+        }
+      ]
+    },
+    {
+      "Route": "css/ionicons.min.css",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\ionicons.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51304"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PevYXwSh3MBHTgqN9M5RIoPh4pkA8KVNPiUYi+2F89Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:24:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PevYXwSh3MBHTgqN9M5RIoPh4pkA8KVNPiUYi+2F89Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/ionicons.min.pd19k2q01p.css",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\ionicons.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51304"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PevYXwSh3MBHTgqN9M5RIoPh4pkA8KVNPiUYi+2F89Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:24:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pd19k2q01p"
+        },
+        {
+          "Name": "label",
+          "Value": "css/ionicons.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PevYXwSh3MBHTgqN9M5RIoPh4pkA8KVNPiUYi+2F89Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/plugins.css",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\plugins.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YhrZlnZeP5sfOa1F0WXEiuyypK31KytNe/T3buCaSPQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:24:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YhrZlnZeP5sfOa1F0WXEiuyypK31KytNe/T3buCaSPQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/plugins.m3mq0erq8s.css",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\plugins.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YhrZlnZeP5sfOa1F0WXEiuyypK31KytNe/T3buCaSPQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:24:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m3mq0erq8s"
+        },
+        {
+          "Name": "label",
+          "Value": "css/plugins.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YhrZlnZeP5sfOa1F0WXEiuyypK31KytNe/T3buCaSPQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.8gbrqok2zt.css",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "83014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uOxNu6JKaL8gFCyIyM9/SN0QwEekWQDYcM0vG8sHSgc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 14:20:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8gbrqok2zt"
         },
         {
           "Name": "label",
@@ -2957,7 +4041,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-uOxNu6JKaL8gFCyIyM9/SN0QwEekWQDYcM0vG8sHSgc="
         }
       ]
     },
@@ -2972,7 +4056,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "83014"
         },
         {
           "Name": "Content-Type",
@@ -2980,11 +4064,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"uOxNu6JKaL8gFCyIyM9/SN0QwEekWQDYcM0vG8sHSgc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Mar 2025 09:28:12 GMT"
+          "Value": "Sun, 30 Mar 2025 14:20:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2994,7 +4078,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-uOxNu6JKaL8gFCyIyM9/SN0QwEekWQDYcM0vG8sHSgc="
         }
       ]
     },
@@ -6039,6 +7123,826 @@
       ]
     },
     {
+      "Route": "Images/banner/1.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53859"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QDoQiNbAbY11UflGh98WTQfErmwFMNPmDt55lY82+V4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QDoQiNbAbY11UflGh98WTQfErmwFMNPmDt55lY82+V4="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/1.oimxmp395y.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53859"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QDoQiNbAbY11UflGh98WTQfErmwFMNPmDt55lY82+V4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oimxmp395y"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/banner/1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QDoQiNbAbY11UflGh98WTQfErmwFMNPmDt55lY82+V4="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/2.4ygndm0pqd.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49060"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dMVlMfjZ2QWVdAK8FTYIXj/cSi5pLu9SoUMNla3zsOI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4ygndm0pqd"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/banner/2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dMVlMfjZ2QWVdAK8FTYIXj/cSi5pLu9SoUMNla3zsOI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/2.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49060"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dMVlMfjZ2QWVdAK8FTYIXj/cSi5pLu9SoUMNla3zsOI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dMVlMfjZ2QWVdAK8FTYIXj/cSi5pLu9SoUMNla3zsOI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/coffee-1.73zfira68a.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63461"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yx202QMIeNpjQ4vtq0OD48bZsKxEM5cAlDVYZEo9uho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "73zfira68a"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/banner/coffee-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yx202QMIeNpjQ4vtq0OD48bZsKxEM5cAlDVYZEo9uho="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/coffee-1.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63461"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yx202QMIeNpjQ4vtq0OD48bZsKxEM5cAlDVYZEo9uho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yx202QMIeNpjQ4vtq0OD48bZsKxEM5cAlDVYZEo9uho="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/coffee-beans-1.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-beans-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77238"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"a40vExyGP1paDZq3xqjreYcn6bL8yrxi8OICVWTBRxM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-a40vExyGP1paDZq3xqjreYcn6bL8yrxi8OICVWTBRxM="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/coffee-beans-1.z6f2wx1ecq.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-beans-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77238"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"a40vExyGP1paDZq3xqjreYcn6bL8yrxi8OICVWTBRxM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z6f2wx1ecq"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/banner/coffee-beans-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-a40vExyGP1paDZq3xqjreYcn6bL8yrxi8OICVWTBRxM="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/coffee-beans-small.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-beans-small.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111018"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GjubmWsMVlFJy28IwNFP5/b5dVce85RFN1M0HqQ4MiA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GjubmWsMVlFJy28IwNFP5/b5dVce85RFN1M0HqQ4MiA="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/coffee-beans-small.qknjt4jppg.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-beans-small.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111018"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GjubmWsMVlFJy28IwNFP5/b5dVce85RFN1M0HqQ4MiA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qknjt4jppg"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/banner/coffee-beans-small.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GjubmWsMVlFJy28IwNFP5/b5dVce85RFN1M0HqQ4MiA="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/coffee-beans.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-beans.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1483633"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dBFvXzsgEXThQaWy7J9XAEfuEpV0RA4+FioSwETFK9c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dBFvXzsgEXThQaWy7J9XAEfuEpV0RA4+FioSwETFK9c="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/coffee-beans.kyn1n6b3ik.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-beans.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1483633"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dBFvXzsgEXThQaWy7J9XAEfuEpV0RA4+FioSwETFK9c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kyn1n6b3ik"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/banner/coffee-beans.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dBFvXzsgEXThQaWy7J9XAEfuEpV0RA4+FioSwETFK9c="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/coffee-beans.lvkvc3grmg.png",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-beans.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4289739"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j0yerNlrSzKVjlenHNI80B2cJ0G8eyjBl6EaeUEta50=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 20:41:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lvkvc3grmg"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/banner/coffee-beans.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j0yerNlrSzKVjlenHNI80B2cJ0G8eyjBl6EaeUEta50="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/coffee-beans.png",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\coffee-beans.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4289739"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j0yerNlrSzKVjlenHNI80B2cJ0G8eyjBl6EaeUEta50=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 20:41:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j0yerNlrSzKVjlenHNI80B2cJ0G8eyjBl6EaeUEta50="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/tools-1.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\tools-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45316"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dnjahKhFEcZaheCX3vPFKDH5vrsXmaxtR/33/Q9yJlY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dnjahKhFEcZaheCX3vPFKDH5vrsXmaxtR/33/Q9yJlY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/tools-1.q3b1m58g0p.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\tools-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45316"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dnjahKhFEcZaheCX3vPFKDH5vrsXmaxtR/33/Q9yJlY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q3b1m58g0p"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/banner/tools-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dnjahKhFEcZaheCX3vPFKDH5vrsXmaxtR/33/Q9yJlY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/tools-2.6qbl4ku22d.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\tools-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50378"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yh1fyVmNTW+KavoZRyehg8/C1co84moLU2q5yR+lwdo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6qbl4ku22d"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/banner/tools-2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yh1fyVmNTW+KavoZRyehg8/C1co84moLU2q5yR+lwdo="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/tools-2.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\tools-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50378"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yh1fyVmNTW+KavoZRyehg8/C1co84moLU2q5yR+lwdo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yh1fyVmNTW+KavoZRyehg8/C1co84moLU2q5yR+lwdo="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/tools.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\tools.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49321"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kgQnySKQLeUjZ6fHmhRaHK2p5Bnub8+MAdvcJfSgvoc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kgQnySKQLeUjZ6fHmhRaHK2p5Bnub8+MAdvcJfSgvoc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/banner/tools.y819e20ele.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\banner\\tools.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49321"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kgQnySKQLeUjZ6fHmhRaHK2p5Bnub8+MAdvcJfSgvoc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y819e20ele"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/banner/tools.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kgQnySKQLeUjZ6fHmhRaHK2p5Bnub8+MAdvcJfSgvoc="
+        }
+      ]
+    },
+    {
       "Route": "Images/bf30a737-7662-4eb5-b5fc-d527a62dd60e.k83cb3vc1q.png",
       "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\bf30a737-7662-4eb5-b5fc-d527a62dd60e.png",
       "Selectors": [],
@@ -6613,8 +8517,8 @@
       ]
     },
     {
-      "Route": "js/site.ie2ny2sc99.js",
-      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\site.js",
+      "Route": "Images/favicon.ico",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6623,19 +8527,56 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "316"
+          "Value": "1150"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/javascript"
+          "Value": "image/x-icon"
         },
         {
           "Name": "ETag",
-          "Value": "\"Fiq1PJSvEdbeMNoDGd3WEzccRJ1p0Jp1LYituxMNJKg=\""
+          "Value": "\"3pXFHENffD6HwO6vpiwUz2fCnOmEjD4yTeD+6h8XLdM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 17:03:09 GMT"
+          "Value": "Wed, 26 Mar 2025 19:25:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3pXFHENffD6HwO6vpiwUz2fCnOmEjD4yTeD+6h8XLdM="
+        }
+      ]
+    },
+    {
+      "Route": "Images/favicon.qam996dp9n.ico",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1150"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3pXFHENffD6HwO6vpiwUz2fCnOmEjD4yTeD+6h8XLdM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:25:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6645,21 +8586,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ie2ny2sc99"
+          "Value": "qam996dp9n"
         },
         {
           "Name": "label",
-          "Value": "js/site.js"
+          "Value": "Images/favicon.ico"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Fiq1PJSvEdbeMNoDGd3WEzccRJ1p0Jp1LYituxMNJKg="
+          "Value": "sha256-3pXFHENffD6HwO6vpiwUz2fCnOmEjD4yTeD+6h8XLdM="
         }
       ]
     },
     {
-      "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\site.js",
+      "Route": "Images/hero/1.8zf4aichnd.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6668,7 +8609,1155 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "316"
+          "Value": "227912"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HAQLiIxg3PebllmRJxBkdy+yYg9XypE27G79V6PwIXI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8zf4aichnd"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/hero/1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HAQLiIxg3PebllmRJxBkdy+yYg9XypE27G79V6PwIXI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/hero/1.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "227912"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HAQLiIxg3PebllmRJxBkdy+yYg9XypE27G79V6PwIXI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HAQLiIxg3PebllmRJxBkdy+yYg9XypE27G79V6PwIXI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/hero/2.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "210512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7stF+MKn5hOl383JnXMvMQJMD7SGS3ude9FWFiubeU4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7stF+MKn5hOl383JnXMvMQJMD7SGS3ude9FWFiubeU4="
+        }
+      ]
+    },
+    {
+      "Route": "Images/hero/2.yc4cbq8qo8.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "210512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7stF+MKn5hOl383JnXMvMQJMD7SGS3ude9FWFiubeU4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yc4cbq8qo8"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/hero/2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7stF+MKn5hOl383JnXMvMQJMD7SGS3ude9FWFiubeU4="
+        }
+      ]
+    },
+    {
+      "Route": "Images/hero/hero-image-1.aw0h0n21hg.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\hero-image-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26134"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yjqesK2bK5dDKBxaYWLxv95UR2lVz1lwZgcAb1BD5+A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aw0h0n21hg"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/hero/hero-image-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yjqesK2bK5dDKBxaYWLxv95UR2lVz1lwZgcAb1BD5+A="
+        }
+      ]
+    },
+    {
+      "Route": "Images/hero/hero-image-1.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\hero-image-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26134"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yjqesK2bK5dDKBxaYWLxv95UR2lVz1lwZgcAb1BD5+A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yjqesK2bK5dDKBxaYWLxv95UR2lVz1lwZgcAb1BD5+A="
+        }
+      ]
+    },
+    {
+      "Route": "Images/hero/hero-image-2.1ls5ktexi3.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\hero-image-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "67298"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C5gPZNnDabOmljv6a6K2D9PWYyqaUCCSFguh5Wxgtic=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1ls5ktexi3"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/hero/hero-image-2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-C5gPZNnDabOmljv6a6K2D9PWYyqaUCCSFguh5Wxgtic="
+        }
+      ]
+    },
+    {
+      "Route": "Images/hero/hero-image-2.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\hero-image-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "67298"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C5gPZNnDabOmljv6a6K2D9PWYyqaUCCSFguh5Wxgtic=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-C5gPZNnDabOmljv6a6K2D9PWYyqaUCCSFguh5Wxgtic="
+        }
+      ]
+    },
+    {
+      "Route": "Images/hero/hero-image-dark.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\hero-image-dark.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2011526"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"se6XTxEwlAAVeimI445FxdwZ+lkWISfRfo7xCFZicPI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-se6XTxEwlAAVeimI445FxdwZ+lkWISfRfo7xCFZicPI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/hero/hero-image-dark.lbd1t6izal.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\hero-image-dark.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2011526"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"se6XTxEwlAAVeimI445FxdwZ+lkWISfRfo7xCFZicPI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lbd1t6izal"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/hero/hero-image-dark.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-se6XTxEwlAAVeimI445FxdwZ+lkWISfRfo7xCFZicPI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/hero/hero-image.dfiyr1uiec.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\hero-image.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1420846"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N2+W9IIGlYuW8XDwo2BnFwTa/SHf5Wt7qSNOpwE4lfs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dfiyr1uiec"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/hero/hero-image.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N2+W9IIGlYuW8XDwo2BnFwTa/SHf5Wt7qSNOpwE4lfs="
+        }
+      ]
+    },
+    {
+      "Route": "Images/hero/hero-image.jpg",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\hero\\hero-image.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1420846"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N2+W9IIGlYuW8XDwo2BnFwTa/SHf5Wt7qSNOpwE4lfs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:23:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N2+W9IIGlYuW8XDwo2BnFwTa/SHf5Wt7qSNOpwE4lfs="
+        }
+      ]
+    },
+    {
+      "Route": "Images/logo-kafelino.4tf167f9nb.png",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\logo-kafelino.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13699"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uIdFZiFiqr7zWZBpRtA3d9AtVWK6xPJCFtWm1Zy8zQc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 17:43:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4tf167f9nb"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/logo-kafelino.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uIdFZiFiqr7zWZBpRtA3d9AtVWK6xPJCFtWm1Zy8zQc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/logo-kafelino.png",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\logo-kafelino.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13699"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uIdFZiFiqr7zWZBpRtA3d9AtVWK6xPJCFtWm1Zy8zQc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 17:43:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uIdFZiFiqr7zWZBpRtA3d9AtVWK6xPJCFtWm1Zy8zQc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/products/product-1.jo7at2g6t2.webp",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-1.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11622"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nbXAuIWzGLrDkCWhSoqVNUOO5Nwd8BEwVG4n23CchyE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 20:00:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jo7at2g6t2"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/products/product-1.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nbXAuIWzGLrDkCWhSoqVNUOO5Nwd8BEwVG4n23CchyE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/products/product-1.webp",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-1.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11622"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nbXAuIWzGLrDkCWhSoqVNUOO5Nwd8BEwVG4n23CchyE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 20:00:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nbXAuIWzGLrDkCWhSoqVNUOO5Nwd8BEwVG4n23CchyE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/products/product-2.br2ychawvd.webp",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8538"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ia0tRxA1fHuCSPkCFfyZbT42K3hvBDkWziwhEy9rbog=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 20:04:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "br2ychawvd"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/products/product-2.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ia0tRxA1fHuCSPkCFfyZbT42K3hvBDkWziwhEy9rbog="
+        }
+      ]
+    },
+    {
+      "Route": "Images/products/product-2.webp",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8538"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ia0tRxA1fHuCSPkCFfyZbT42K3hvBDkWziwhEy9rbog=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 20:04:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ia0tRxA1fHuCSPkCFfyZbT42K3hvBDkWziwhEy9rbog="
+        }
+      ]
+    },
+    {
+      "Route": "Images/products/product-3.webp",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-3.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8310"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FexLg18acmsOuAdDwTD3ebmacewVvlmUI4vHu3Q7ovA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 20:04:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FexLg18acmsOuAdDwTD3ebmacewVvlmUI4vHu3Q7ovA="
+        }
+      ]
+    },
+    {
+      "Route": "Images/products/product-3.xl86z6iiz1.webp",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-3.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8310"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FexLg18acmsOuAdDwTD3ebmacewVvlmUI4vHu3Q7ovA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 20:04:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xl86z6iiz1"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/products/product-3.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FexLg18acmsOuAdDwTD3ebmacewVvlmUI4vHu3Q7ovA="
+        }
+      ]
+    },
+    {
+      "Route": "Images/products/product-4.j18qgk2q1j.webp",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-4.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11332"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NysPwoahgMpEK0tWqghbLBTySYfyB3ToyCNFZsm83RQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 20:04:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j18qgk2q1j"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/products/product-4.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NysPwoahgMpEK0tWqghbLBTySYfyB3ToyCNFZsm83RQ="
+        }
+      ]
+    },
+    {
+      "Route": "Images/products/product-4.webp",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-4.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11332"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NysPwoahgMpEK0tWqghbLBTySYfyB3ToyCNFZsm83RQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 20:04:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NysPwoahgMpEK0tWqghbLBTySYfyB3ToyCNFZsm83RQ="
+        }
+      ]
+    },
+    {
+      "Route": "Images/products/product-5.f4imwrhce5.webp",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-5.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11712"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wX4frL/GhBmUEahloaG6nWWnRvUijIlguNTco9oq43E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 20:04:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f4imwrhce5"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/products/product-5.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wX4frL/GhBmUEahloaG6nWWnRvUijIlguNTco9oq43E="
+        }
+      ]
+    },
+    {
+      "Route": "Images/products/product-5.webp",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-5.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11712"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wX4frL/GhBmUEahloaG6nWWnRvUijIlguNTco9oq43E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 20:04:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wX4frL/GhBmUEahloaG6nWWnRvUijIlguNTco9oq43E="
+        }
+      ]
+    },
+    {
+      "Route": "Images/products/product-6.w69tjgbht8.webp",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-6.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11840"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yPZq7wFiChBDa8XsrRyGHxxI5CsLD8Q0qKu4pmTUI+k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 20:05:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w69tjgbht8"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/products/product-6.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yPZq7wFiChBDa8XsrRyGHxxI5CsLD8Q0qKu4pmTUI+k="
+        }
+      ]
+    },
+    {
+      "Route": "Images/products/product-6.webp",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\products\\product-6.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11840"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yPZq7wFiChBDa8XsrRyGHxxI5CsLD8Q0qKu4pmTUI+k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 20:05:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yPZq7wFiChBDa8XsrRyGHxxI5CsLD8Q0qKu4pmTUI+k="
+        }
+      ]
+    },
+    {
+      "Route": "Images/trolley.liduie8rh4.png",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\trolley.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1150"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E9adkaUDhXmCFdeUCuhVgtucXwrTVs8Cq2eYhXV/yVg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 18:04:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "liduie8rh4"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/trolley.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E9adkaUDhXmCFdeUCuhVgtucXwrTVs8Cq2eYhXV/yVg="
+        }
+      ]
+    },
+    {
+      "Route": "Images/trolley.png",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\Images\\trolley.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1150"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E9adkaUDhXmCFdeUCuhVgtucXwrTVs8Cq2eYhXV/yVg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 18:04:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E9adkaUDhXmCFdeUCuhVgtucXwrTVs8Cq2eYhXV/yVg="
+        }
+      ]
+    },
+    {
+      "Route": "js/ajax-mail.js",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\ajax-mail.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1249"
         },
         {
           "Name": "Content-Type",
@@ -6676,11 +9765,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Fiq1PJSvEdbeMNoDGd3WEzccRJ1p0Jp1LYituxMNJKg=\""
+          "Value": "\"RYlKra55pEH954m7Lhizo/lylXqVDJn+YUcOQYf11vA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 17:03:09 GMT"
+          "Value": "Wed, 26 Mar 2025 19:26:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6690,7 +9779,626 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Fiq1PJSvEdbeMNoDGd3WEzccRJ1p0Jp1LYituxMNJKg="
+          "Value": "sha256-RYlKra55pEH954m7Lhizo/lylXqVDJn+YUcOQYf11vA="
+        }
+      ]
+    },
+    {
+      "Route": "js/ajax-mail.vjzby3e38g.js",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\ajax-mail.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1249"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RYlKra55pEH954m7Lhizo/lylXqVDJn+YUcOQYf11vA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:26:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vjzby3e38g"
+        },
+        {
+          "Name": "label",
+          "Value": "js/ajax-mail.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RYlKra55pEH954m7Lhizo/lylXqVDJn+YUcOQYf11vA="
+        }
+      ]
+    },
+    {
+      "Route": "js/bootstrap.min.js",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\bootstrap.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "58072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:26:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s="
+        }
+      ]
+    },
+    {
+      "Route": "js/bootstrap.min.m8so7gk97h.js",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\bootstrap.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "58072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:26:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m8so7gk97h"
+        },
+        {
+          "Name": "label",
+          "Value": "js/bootstrap.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s="
+        }
+      ]
+    },
+    {
+      "Route": "js/main.js",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6316"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ULHR/WTr+jA6DToarF1fKNUw1QrxAFVT0AmgIs6Ae8s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 29 Mar 2025 14:28:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ULHR/WTr+jA6DToarF1fKNUw1QrxAFVT0AmgIs6Ae8s="
+        }
+      ]
+    },
+    {
+      "Route": "js/main.oek8wm6sgx.js",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6316"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ULHR/WTr+jA6DToarF1fKNUw1QrxAFVT0AmgIs6Ae8s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 29 Mar 2025 14:28:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oek8wm6sgx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/main.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ULHR/WTr+jA6DToarF1fKNUw1QrxAFVT0AmgIs6Ae8s="
+        }
+      ]
+    },
+    {
+      "Route": "js/map.js",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\map.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5760"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mbR73v2EkK2ukokphkNRI6CdbkLKa2N3ym+JLuqgPFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:26:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mbR73v2EkK2ukokphkNRI6CdbkLKa2N3ym+JLuqgPFU="
+        }
+      ]
+    },
+    {
+      "Route": "js/map.vic0gn0px8.js",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\map.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5760"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mbR73v2EkK2ukokphkNRI6CdbkLKa2N3ym+JLuqgPFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:26:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vic0gn0px8"
+        },
+        {
+          "Name": "label",
+          "Value": "js/map.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mbR73v2EkK2ukokphkNRI6CdbkLKa2N3ym+JLuqgPFU="
+        }
+      ]
+    },
+    {
+      "Route": "js/plugins.cf011imy9n.js",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\plugins.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "79261"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aMGec4dmK/QlC+aMZ6BiIn7OOfgJRCLg0eniVSY0NmU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:26:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cf011imy9n"
+        },
+        {
+          "Name": "label",
+          "Value": "js/plugins.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aMGec4dmK/QlC+aMZ6BiIn7OOfgJRCLg0eniVSY0NmU="
+        }
+      ]
+    },
+    {
+      "Route": "js/plugins.js",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\plugins.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "79261"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aMGec4dmK/QlC+aMZ6BiIn7OOfgJRCLg0eniVSY0NmU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:26:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aMGec4dmK/QlC+aMZ6BiIn7OOfgJRCLg0eniVSY0NmU="
+        }
+      ]
+    },
+    {
+      "Route": "js/popper.min.6tfrm3o759.js",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\popper.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18994"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NnXyJvmFtk7qauhUTVSWoy0ZmTquGsSj+hASY+8yBvc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:26:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6tfrm3o759"
+        },
+        {
+          "Name": "label",
+          "Value": "js/popper.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NnXyJvmFtk7qauhUTVSWoy0ZmTquGsSj+hASY+8yBvc="
+        }
+      ]
+    },
+    {
+      "Route": "js/popper.min.js",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\popper.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18994"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NnXyJvmFtk7qauhUTVSWoy0ZmTquGsSj+hASY+8yBvc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:26:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NnXyJvmFtk7qauhUTVSWoy0ZmTquGsSj+hASY+8yBvc="
+        }
+      ]
+    },
+    {
+      "Route": "js/vendor/jquery-1.12.0.min.b13wvdzdm3.js",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\vendor\\jquery-1.12.0.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "97362"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xxq2X+KtazgaGuA2cWR1v3jJsuMJUozyIXDB3e793L8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:26:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b13wvdzdm3"
+        },
+        {
+          "Name": "label",
+          "Value": "js/vendor/jquery-1.12.0.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xxq2X+KtazgaGuA2cWR1v3jJsuMJUozyIXDB3e793L8="
+        }
+      ]
+    },
+    {
+      "Route": "js/vendor/jquery-1.12.0.min.js",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\vendor\\jquery-1.12.0.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "97362"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xxq2X+KtazgaGuA2cWR1v3jJsuMJUozyIXDB3e793L8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:26:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xxq2X+KtazgaGuA2cWR1v3jJsuMJUozyIXDB3e793L8="
+        }
+      ]
+    },
+    {
+      "Route": "js/vendor/modernizr-2.8.3.min.js",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\vendor\\modernizr-2.8.3.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15514"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Kw+FJuehsPH7Quis7DwedzehowZbdz69E6SSlS9VeWc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:26:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Kw+FJuehsPH7Quis7DwedzehowZbdz69E6SSlS9VeWc="
+        }
+      ]
+    },
+    {
+      "Route": "js/vendor/modernizr-2.8.3.min.t62jrl3z6l.js",
+      "AssetFile": "C:\\Users\\hrist\\source\\repos\\Kafelino\\Kafelino\\wwwroot\\js\\vendor\\modernizr-2.8.3.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15514"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Kw+FJuehsPH7Quis7DwedzehowZbdz69E6SSlS9VeWc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 19:26:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t62jrl3z6l"
+        },
+        {
+          "Name": "label",
+          "Value": "js/vendor/modernizr-2.8.3.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Kw+FJuehsPH7Quis7DwedzehowZbdz69E6SSlS9VeWc="
         }
       ]
     },

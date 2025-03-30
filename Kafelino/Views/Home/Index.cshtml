@@ -2,7 +2,46 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div id="main-wrapper" class="section">
+    <div class="hero-slider section fix">
+        <div class="hero-item" style="background-image: url(Images/hero/hero-image-1.jpg)">
+            <div class="hero-content">
+                <h1>Кафелино</h1>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which.</p>
+                <a href="#">Към продуктите</a>
+
+            </div>
+        </div>
+        <div class="hero-item" style="background-image: url(Images/hero/hero-image-2.jpg)">
+            <div class="hero-content">
+                <h1>Кафелино</h1>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which.</p>
+                <a href="#">За нас</a>
+            </div>
+        </div>
+    </div>
+    <div class="banner-section section pt-120 pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="single-banner">
+                        <img height="" src="Images/banner/coffee-1.jpg" alt="banner">
+                        <div class="banner-content right">
+                            <h2 class="white"><span class="small beige">Специално</span>Кафе</h2>
+                            <a asp-controller="Products" asp-action="All" class="button">Купи сега</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="single-banner">
+                        <img src="Images/banner/tools-2.jpg" alt="banner">
+                        <div class="banner-content left">
+                            <h2 class="black"><span class="small">Кафе</span><span class="beige">Аксесоари</span></h2>
+                            <a asp-controller="Products" asp-action="All" class="link">Разгледай</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
