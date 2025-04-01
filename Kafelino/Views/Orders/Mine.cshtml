@@ -1,11 +1,11 @@
 @model List<Kafelino.Models.Orders.OrderDetailsOutputModel>
 
-<section class="page-header">
+<section class="page-header mt-200">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="content">
-                    <h1 class="page-name">Всички поръчки</h1>
+                    <h1 class="page-name">Моите поръчки</h1>
                 </div>
             </div>
         </div>
@@ -39,7 +39,10 @@
                                     <td>
                                         @foreach (var product in order.Products)
                                         {
-                                            <p>@product.Name x @product.Quantity</p>
+                                            <a asp-controller="Products" asp-action="Details" asp-route-productId="@product.ProductId">
+                                                <p>@product.Name x @product.Quantity</p>
+                                            </a>
+                                            <br/>
                                         }
                                     </td>
                                     <td>@order.TotalSum лв.</td>

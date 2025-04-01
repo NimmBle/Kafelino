@@ -146,9 +146,9 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 1,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1461),
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3631),
                             Description = "Тази изключителна партида Гейша идва от прочутата ферма Volcán Azul, която редовно се отличава като победител в конкурса Cup of Excellence Costa Rica. Обработена чрез натурален метод, тази партида разкрива елегантността и сложността, които правят Гейша толкова ценен сорт. Ароматът е фин и цветен, водещ към живи вкусове на жасмин и сочна папая. Ябълково-цитрусова киселинност придава свеж баланс, докато естествената сладост се запазва дълго, оставяйки изтънчен и продължителен вкус на кафява захар.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/vulkan-azul-geisha.jpg",
+                            ImageUrl = "product-1.webp",
                             IsDeleted = false,
                             Name = "Вулкан Азул | Гейша",
                             Price = 26.00m,
@@ -159,9 +159,9 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 2,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1531),
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3700),
                             Description = "Тази уникална партида е резултат от иновативния подход на Хайро Арсила, който използва плодова ферментация за обогатяване на вкусовия профил. Кафето впечатлява с нотки на праскова, кокос и ванилия, създавайки комплексен и запомнящ се вкус.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/jairo-arsila-fruit-fermentation.jpg",
+                            ImageUrl = "product-2.webp",
                             IsDeleted = false,
                             Name = "Хайро Арсила | Плодова ферментация",
                             Price = 24.00m,
@@ -172,9 +172,9 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 3,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1533),
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3702),
                             Description = "Отгледано в региона Уиля, Колумбия, това кафе от сорта Таби предлага богат вкус с изразени нотки на боровинки, грозде и натурален шоколад. Идеално за любителите на плодови и сладки профили.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/alonso-bustos-tabi.jpg",
+                            ImageUrl = "product-3.webp",
                             IsDeleted = false,
                             Name = "Алонсо Бустос | Таби",
                             Price = 32.00m,
@@ -185,9 +185,9 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 4,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1535),
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3704),
                             Description = "Тази партида от региона Гуджи в Етиопия се отличава с флорални аромати и вкусове на жасмин, праскова и карамел. Перфектен избор за тези, които търсят елегантно и балансирано кафе.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/hambela-guji-ethiopia.jpg",
+                            ImageUrl = "product-4.webp",
                             IsDeleted = false,
                             Name = "Хамбела Гуджи, Етиопия",
                             Price = 28.00m,
@@ -198,9 +198,9 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 5,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1537),
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3706),
                             Description = "Кафе от региона Матагалпа в Никарагуа, което впечатлява с плътно тяло и вкусови нотки на карамел, зряла череша и черен чай.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/finca-san-isidro-catuai.jpg",
+                            ImageUrl = "product-5.webp",
                             IsDeleted = false,
                             Name = "Финка Сан Исидро | Катуай",
                             Price = 19.00m,
@@ -211,9 +211,9 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 6,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1539),
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3708),
                             Description = "Традиционно кенийско кафе с интензивен аромат и вкусове на касис, цитрусови плодове и черен чай. Отличен избор за филтърно приготвяне.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/kenya-karimiru-sl28-sl34.jpg",
+                            ImageUrl = "product-6.webp",
                             IsDeleted = false,
                             Name = "Кения Каримиру | SL28 & SL34",
                             Price = 28.00m,
@@ -223,10 +223,10 @@ namespace Kafelino.Data.Migrations
                         new
                         {
                             ProductId = 7,
-                            Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1541),
+                            Brand = "BUGs",
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3709),
                             Description = "Кафе от планините на Гватемала с комплексен профил и вкусове на какао, карамел и портокалова кора.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/guatemala-junacan-pacamara.jpg",
+                            ImageUrl = "product-7.webp",
                             IsDeleted = false,
                             Name = "Гватемала Хунакан | Пакмара",
                             Price = 25.00m,
@@ -236,10 +236,10 @@ namespace Kafelino.Data.Migrations
                         new
                         {
                             ProductId = 8,
-                            Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1543),
+                            Brand = "BUGs",
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3711),
                             Description = "Традиционно бразилско кафе със сладък и балансиран вкус на шоколад, лешник и карамел. Перфектно за еспресо.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/brazil-santos-natural.jpg",
+                            ImageUrl = "product-8.webp",
                             IsDeleted = false,
                             Name = "Бразилия Сантош | Натурален",
                             Price = 18.00m,
@@ -249,10 +249,10 @@ namespace Kafelino.Data.Migrations
                         new
                         {
                             ProductId = 9,
-                            Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1545),
+                            Brand = "BUGs",
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3713),
                             Description = "Легендарно кафе от региона Йиргачеф в Етиопия, което предлага флорални нотки, цитрусови плодове и медена сладост.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/ethiopia-sidamo-yirgacheffe.jpg",
+                            ImageUrl = "product-9.webp",
                             IsDeleted = false,
                             Name = "Етиопия Сидамо | Yirgacheffe",
                             Price = 26.00m,
@@ -262,10 +262,10 @@ namespace Kafelino.Data.Migrations
                         new
                         {
                             ProductId = 10,
-                            Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1547),
+                            Brand = "BUGs",
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3715),
                             Description = "Плодово и сладко кафе с нотки на сушена слива, лешник и мед. Един от най-добрите примери за африканско кафе.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/rwanda-gaciziro-bourbon.jpg",
+                            ImageUrl = "product-10.webp",
                             IsDeleted = false,
                             Name = "Руанда Гацизиро | Бърбън",
                             Price = 27.00m,
@@ -275,10 +275,10 @@ namespace Kafelino.Data.Migrations
                         new
                         {
                             ProductId = 11,
-                            Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1549),
+                            Brand = "BUGs",
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3716),
                             Description = "Едно от най-изисканите кафета в света – Панамската Гейша от региона Бокете е известна със своите интензивни флорални аромати, цитрусови нотки и копринена текстура. Сладостта и продължителният послевкус правят това кафе истинско удоволствие.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/panama-boquete-geisha.jpg",
+                            ImageUrl = "product-11.webp",
                             IsDeleted = false,
                             Name = "Панама Бокете | Гейша",
                             Price = 30.00m,
@@ -288,10 +288,10 @@ namespace Kafelino.Data.Migrations
                         new
                         {
                             ProductId = 12,
-                            Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1551),
+                            Brand = "Sparrows",
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3718),
                             Description = "Кафе от региона Гайо в Суматра, което предлага пикантни и земни нотки с намек за канела, тъмен шоколад и индийско орехче. Балансирано тяло и дълъг, сладък послевкус.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/indonesia-sumatra-gayo.jpg",
+                            ImageUrl = "product-12.webp",
                             IsDeleted = false,
                             Name = "Индонезия Суматра | Gayo",
                             Price = 22.50m,
@@ -301,10 +301,10 @@ namespace Kafelino.Data.Migrations
                         new
                         {
                             ProductId = 13,
-                            Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1553),
+                            Brand = "Methodical",
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3720),
                             Description = "Класическо йеменско кафе с дълбок профил – нотки на тъмен шоколад, черен чай и сушени плодове. Истинско историческо кафе с автентичен вкус.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/yemen-mokha-matari.jpg",
+                            ImageUrl = "product-13.webp",
                             IsDeleted = false,
                             Name = "Йемен Мокха Матари",
                             Price = 32.00m,
@@ -314,10 +314,10 @@ namespace Kafelino.Data.Migrations
                         new
                         {
                             ProductId = 14,
-                            Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1555),
+                            Brand = "Huckleberry",
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3722),
                             Description = "Уникално кафе от планините на Уганда със сочен плодов профил и нотки на кайсия, шоколад и карамфил. Отличава се със свежа киселинност и кремообразно тяло.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/uganda-bugisu-sl14-sl28.jpg",
+                            ImageUrl = "product-14.webp",
                             IsDeleted = false,
                             Name = "Уганда Бугису | SL14 & SL28",
                             Price = 23.50m,
@@ -327,10 +327,10 @@ namespace Kafelino.Data.Migrations
                         new
                         {
                             ProductId = 15,
-                            Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1556),
+                            Brand = "Atomic",
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3724),
                             Description = "Отгледано в региона Маркала, това кафе предлага приятен баланс между сладост и киселинност, с нотки на мед, орех и млечен шоколад.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/honduras-marcala-catuai.jpg",
+                            ImageUrl = "product-15.webp",
                             IsDeleted = false,
                             Name = "Хондурас Маркала | Катуай",
                             Price = 21.50m,
@@ -341,9 +341,9 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 16,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1558),
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3725),
                             Description = "Кафе от региона Серрадо в Бразилия със сладък и плътен профил. Вкусове на лешник, шоколад и карамел правят това кафе отличен избор за еспресо.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/brazil-cerrado-bourbon.jpg",
+                            ImageUrl = "product-16.webp",
                             IsDeleted = false,
                             Name = "Бразилия Серрадо | Бурбон",
                             Price = 19.00m,
@@ -354,9 +354,9 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 17,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1560),
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3797),
                             Description = "Средно изпечено перуанско кафе със сладък и мек вкус. Нотки на тъмен шоколад, бадем и сладка череша. Подходящо за всички методи на приготвяне.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/peru-san-ignacio-catuai.jpg",
+                            ImageUrl = "product-17.webp",
                             IsDeleted = false,
                             Name = "Перу Сан Игнасио | Катуай",
                             Price = 23.00m,
@@ -367,9 +367,9 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 18,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1562),
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3799),
                             Description = "Кафе от един от най-добрите райони в Коста Рика, отличаващо се с карамелена сладост, нотки на ванилия и цитрусово усещане. Перфектно за филтърно кафе.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/costa-rica-tarrazu-caturra.jpg",
+                            ImageUrl = "product-18.webp",
                             IsDeleted = false,
                             Name = "Коста Рика Тарразу | Катура",
                             Price = 24.50m,
@@ -380,9 +380,9 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 19,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1564),
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3801),
                             Description = "Фина селекция от сорта Пакамаара, отличаваща се с плодова сладост и нотки на зелена ябълка, мед и лимон. Изключително комплексно и балансирано кафе.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/el-salvador-santa-ana-pacamara.jpg",
+                            ImageUrl = "product-19.webp",
                             IsDeleted = false,
                             Name = "Ел Салвадор Санта Ана | Пакамаара",
                             Price = 26.00m,
@@ -393,9 +393,9 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 20,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 3, 19, 22, 2, 0, 808, DateTimeKind.Local).AddTicks(1566),
+                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3803),
                             Description = "Високопланинско кафе с богата киселинност и сложен ароматен профил. Нотки на кайсия, мед и черен чай го правят предпочитан избор за филтърно кафе.",
-                            ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/colombia-tolima-castillo.jpg",
+                            ImageUrl = "product-20.webp",
                             IsDeleted = false,
                             Name = "Колумбия Толуима | Кастийо",
                             Price = 25.00m,
@@ -920,9 +920,9 @@ namespace Kafelino.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "2165c78b-8b5e-4fd2-b862-36d753465dfc",
+                            Id = "d11aca42-5c31-4970-b684-05e8ce5b35b0",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "6475fa08-3733-463d-84b7-3154642f630b",
+                            ConcurrencyStamp = "e68ead61-da33-4a25-9fde-095045245e01",
                             Email = "admin@kafelino.com",
                             EmailConfirmed = true,
                             FirstName = "Иван",
@@ -930,17 +930,17 @@ namespace Kafelino.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@KAFELINO.COM",
                             NormalizedUserName = "ADMIN@KAFELINO.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEAPG0QM3unywwqwmdwEIqCO5TAK0QU88oMxc4A55+vCa+FlY6SVjf+Mx5kVIyvLyyg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDjG8bxOXMOI1ilPmTrYMyW/eg9OSWxjAJccT3dxV75vW83jEJrGw9BZfOC9M120hQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "47207b50-636d-418b-a14d-4c2538884af7",
+                            SecurityStamp = "41383756-2375-4744-ba30-4dece30c6f96",
                             TwoFactorEnabled = false,
                             UserName = "admin@kafelino.com"
                         },
                         new
                         {
-                            Id = "351271dc-b3c0-472c-8634-9440336a328e",
+                            Id = "d39dfee2-14be-41ca-89a8-e9fe57869106",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "af9a4e67-ea30-4372-8649-82e3197eba5a",
+                            ConcurrencyStamp = "ad115563-f339-4457-8720-91b521795b05",
                             Email = "user@kafelino.com",
                             EmailConfirmed = true,
                             FirstName = "Михаил",
@@ -948,9 +948,9 @@ namespace Kafelino.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@KAFELINO.COM",
                             NormalizedUserName = "USER@KAFELINO.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKkOMXMtGeuuB76gIpS/WQWRQg3b3IBzF1DNAScxeoT3YraLOT84mcorJ8FYFoXJ0A==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEALnR82wxRUljSFH58sLk1YlrrGsNVDDc29igO13DfROsBbrp94/JBE/eyZP43uwqQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "719c9f34-da9c-4fd5-87b2-392ee7d91ae3",
+                            SecurityStamp = "e854f777-e0f5-4956-89d7-cdd31f08439f",
                             TwoFactorEnabled = false,
                             UserName = "user@kafelino.com"
                         });
@@ -1031,8 +1031,8 @@ namespace Kafelino.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "964f4b36-48aa-4630-9cd4-2df269f0592a",
-                            ConcurrencyStamp = "964f4b36-48aa-4630-9cd4-2df269f0592a",
+                            Id = "c20d752f-fdbf-4dee-bf4d-a74884544984",
+                            ConcurrencyStamp = "c20d752f-fdbf-4dee-bf4d-a74884544984",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -1129,8 +1129,8 @@ namespace Kafelino.Data.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "2165c78b-8b5e-4fd2-b862-36d753465dfc",
-                            RoleId = "964f4b36-48aa-4630-9cd4-2df269f0592a"
+                            UserId = "d11aca42-5c31-4970-b684-05e8ce5b35b0",
+                            RoleId = "c20d752f-fdbf-4dee-bf4d-a74884544984"
                         });
                 });
 

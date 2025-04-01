@@ -16,7 +16,7 @@
                 <div class="col-lg-6 col-12 mb-30">
                     <div class="single-product-image product-image-slider fix">
                         <div class="single-image">
-                            <img src="~/Images/products/@Model.ImageUrl" alt="" style="margin-top: -200px;">
+                                <img src="~/Images/products/@Model.ImageUrl" alt="" style="margin-top: -200px;">
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,6 @@
                             @if (!Model.ProductInCart)
                             {
                                 <a class="add-to-cart" asp-action="AddToCart" asp-route-productId="@Model.ProductId">Добави в количката</a>
-                                
                             }
                             @if (this.User.IsInRole("Admin"))
                             {
@@ -62,6 +61,10 @@
                                     <a class="delete-product-button-details" asp-action="Delete" asp-route-id="@Model.ProductId">Изтрий</a>
                                 </div>    
                             }
+                        }
+                        else
+                        {
+                            <p class="text-dark">За да добавиш продукта в количката си, трябва първо да си създаден профил: <a asp-area="Identity" asp-page="/Account/Register">Регистрирай се</a></p>
                         }
                     </div>
                 </div><!-- Product Content End -->

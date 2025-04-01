@@ -8,5 +8,7 @@ public class ProductListingViewModel
     
     public ICollection<ProductViewModel> Products { get; set; }
     
+    public string sortedBy { get; set; }
+    
 
 }

@@ -221,7 +221,7 @@ namespace Kafelino.Data
                     ProductId = 6,
                     Name = "Кения Каримиру | SL28 & SL34",
                     Description = "Традиционно кенийско кафе с интензивен аромат и вкусове на касис, цитрусови плодове и черен чай. Отличен избор за филтърно приготвяне.",
-                    ImageUrl = "product-6.webp",
+                    ImageUrl =  "product-6.webp",
                     Price = 28.00m,
                     Quantity = 95,
                     Brand = "KOMETA",
@@ -232,10 +232,10 @@ namespace Kafelino.Data
                     ProductId = 7,
                     Name = "Гватемала Хунакан | Пакмара",
                     Description = "Кафе от планините на Гватемала с комплексен профил и вкусове на какао, карамел и портокалова кора.",
-                    ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/guatemala-junacan-pacamara.jpg",
+                    ImageUrl = "product-7.webp",
                     Price = 25.00m,
                     Quantity = 110,
-                    Brand = "KOMETA",
+                    Brand = "BUGs",
                     WeightId = 2
                 },
                 new Product
@@ -243,10 +243,10 @@ namespace Kafelino.Data
                     ProductId = 8,
                     Name = "Бразилия Сантош | Натурален",
                     Description = "Традиционно бразилско кафе със сладък и балансиран вкус на шоколад, лешник и карамел. Перфектно за еспресо.",
-                    ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/brazil-santos-natural.jpg",
+                    ImageUrl = "product-8.webp",
                     Price = 18.00m,
                     Quantity = 90,
-                    Brand = "KOMETA",
+                    Brand = "BUGs",
                     WeightId = 1
                 },
                 new Product
@@ -254,10 +254,10 @@ namespace Kafelino.Data
                     ProductId = 9,
                     Name = "Етиопия Сидамо | Yirgacheffe",
                     Description = "Легендарно кафе от региона Йиргачеф в Етиопия, което предлага флорални нотки, цитрусови плодове и медена сладост.",
-                    ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/ethiopia-sidamo-yirgacheffe.jpg",
+                    ImageUrl = "product-9.webp",
                     Price = 26.00m,
                     Quantity = 80,
-                    Brand = "KOMETA",
+                    Brand = "BUGs",
                     WeightId = 3
                 },
                 new Product
@@ -265,10 +265,10 @@ namespace Kafelino.Data
                     ProductId = 10,
                     Name = "Руанда Гацизиро | Бърбън",
                     Description = "Плодово и сладко кафе с нотки на сушена слива, лешник и мед. Един от най-добрите примери за африканско кафе.",
-                    ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/rwanda-gaciziro-bourbon.jpg",
+                    ImageUrl = "product-10.webp",
                     Price = 27.00m,
                     Quantity = 115,
-                    Brand = "KOMETA",
+                    Brand = "BUGs",
                     WeightId = 4
                 },
                 new Product
@@ -276,10 +276,10 @@ namespace Kafelino.Data
                     ProductId = 11,
                     Name = "Панама Бокете | Гейша",
                     Description = "Едно от най-изисканите кафета в света – Панамската Гейша от региона Бокете е известна със своите интензивни флорални аромати, цитрусови нотки и копринена текстура. Сладостта и продължителният послевкус правят това кафе истинско удоволствие.",
-                    ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/panama-boquete-geisha.jpg",
+                    ImageUrl = "product-11.webp",
                     Price = 30.00m,
                     Quantity = 105,
-                    Brand = "KOMETA",
+                    Brand = "BUGs",
                     WeightId = 1
                 },
                 new Product
@@ -287,10 +287,10 @@ namespace Kafelino.Data
                     ProductId = 12,
                     Name = "Индонезия Суматра | Gayo",
                     Description = "Кафе от региона Гайо в Суматра, което предлага пикантни и земни нотки с намек за канела, тъмен шоколад и индийско орехче. Балансирано тяло и дълъг, сладък послевкус.",
-                    ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/indonesia-sumatra-gayo.jpg",
+                    ImageUrl = "product-12.webp",
                     Price = 22.50m,
                     Quantity = 95,
-                    Brand = "KOMETA",
+                    Brand = "Sparrows",
                     WeightId = 3
                 },
                 new Product
@@ -298,10 +298,10 @@ namespace Kafelino.Data
                     ProductId = 13,
                     Name = "Йемен Мокха Матари",
                     Description = "Класическо йеменско кафе с дълбок профил – нотки на тъмен шоколад, черен чай и сушени плодове. Истинско историческо кафе с автентичен вкус.",
-                    ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/yemen-mokha-matari.jpg",
+                    ImageUrl = "product-13.webp",
                     Price = 32.00m,
                     Quantity = 85,
-                    Brand = "KOMETA",
+                    Brand = "Methodical",
                     WeightId = 2
                 },
                 new Product
@@ -309,10 +309,10 @@ namespace Kafelino.Data
                     ProductId = 14,
                     Name = "Уганда Бугису | SL14 & SL28",
                     Description = "Уникално кафе от планините на Уганда със сочен плодов профил и нотки на кайсия, шоколад и карамфил. Отличава се със свежа киселинност и кремообразно тяло.",
-                    ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/uganda-bugisu-sl14-sl28.jpg",
+                    ImageUrl = "product-14.webp",
                     Price = 23.50m,
                     Quantity = 115,
-                    Brand = "KOMETA",
+                    Brand = "Huckleberry",
                     WeightId = 4
                 },
                 new Product
@@ -320,10 +320,10 @@ namespace Kafelino.Data
                     ProductId = 15,
                     Name = "Хондурас Маркала | Катуай",
                     Description = "Отгледано в региона Маркала, това кафе предлага приятен баланс между сладост и киселинност, с нотки на мед, орех и млечен шоколад.",
-                    ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/honduras-marcala-catuai.jpg",
+                    ImageUrl = "product-15.webp",
                     Price = 21.50m,
                     Quantity = 100,
-                    Brand = "KOMETA",
+                    Brand = "Atomic",
                     WeightId = 1
                 },
                 new Product
@@ -331,7 +331,7 @@ namespace Kafelino.Data
                     ProductId = 16,
                     Name = "Бразилия Серрадо | Бурбон",
                     Description = "Кафе от региона Серрадо в Бразилия със сладък и плътен профил. Вкусове на лешник, шоколад и карамел правят това кафе отличен избор за еспресо.",
-                    ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/brazil-cerrado-bourbon.jpg",
+                    ImageUrl = "product-16.webp",
                     Price = 19.00m,
                     Quantity = 110,
                     Brand = "KOMETA",
@@ -342,7 +342,7 @@ namespace Kafelino.Data
                     ProductId = 17,
                     Name = "Перу Сан Игнасио | Катуай",
                     Description = "Средно изпечено перуанско кафе със сладък и мек вкус. Нотки на тъмен шоколад, бадем и сладка череша. Подходящо за всички методи на приготвяне.",
-                    ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/peru-san-ignacio-catuai.jpg",
+                    ImageUrl = "product-17.webp",
                     Price = 23.00m,
                     Quantity = 90,
                     Brand = "KOMETA",
@@ -353,7 +353,7 @@ namespace Kafelino.Data
                     ProductId = 18,
                     Name = "Коста Рика Тарразу | Катура",
                     Description = "Кафе от един от най-добрите райони в Коста Рика, отличаващо се с карамелена сладост, нотки на ванилия и цитрусово усещане. Перфектно за филтърно кафе.",
-                    ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/costa-rica-tarrazu-caturra.jpg",
+                    ImageUrl = "product-18.webp",
                     Price = 24.50m,
                     Quantity = 120,
                     Brand = "KOMETA",
@@ -364,7 +364,7 @@ namespace Kafelino.Data
                     ProductId = 19,
                     Name = "Ел Салвадор Санта Ана | Пакамаара",
                     Description = "Фина селекция от сорта Пакамаара, отличаваща се с плодова сладост и нотки на зелена ябълка, мед и лимон. Изключително комплексно и балансирано кафе.",
-                    ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/el-salvador-santa-ana-pacamara.jpg",
+                    ImageUrl = "product-19.webp",
                     Price = 26.00m,
                     Quantity = 80,
                     Brand = "KOMETA",
@@ -375,7 +375,7 @@ namespace Kafelino.Data
                     ProductId = 20,
                     Name = "Колумбия Толуима | Кастийо",
                     Description = "Високопланинско кафе с богата киселинност и сложен ароматен профил. Нотки на кайсия, мед и черен чай го правят предпочитан избор за филтърно кафе.",
-                    ImageUrl = "https://kometa.coffee/wp-content/uploads/2024/03/colombia-tolima-castillo.jpg",
+                    ImageUrl = "product-20.webp",
                     Price = 25.00m,
                     Quantity = 75,
                     Brand = "KOMETA",
@@ -383,8 +383,8 @@ namespace Kafelino.Data
                 }
             );
             
-            builder.Entity<ProductTasteNote>().HasData(
-                // Вулкан Азул | Гейша
+                builder.Entity<ProductTasteNote>().HasData(
+                    // Вулкан Азул | Гейша
                 new ProductTasteNote { ProductId = 1, TasteNoteId = 1 },
                 new ProductTasteNote { ProductId = 1, TasteNoteId = 2 },
                 new ProductTasteNote { ProductId = 1, TasteNoteId = 3 },

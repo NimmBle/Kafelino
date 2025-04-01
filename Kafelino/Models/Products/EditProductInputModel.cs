@@ -13,7 +13,7 @@ public class EditProductInputModel
     public IFormFile? Image { get; set; }
 
     [Required(ErrorMessage = "Полето е задължително")]
-    public string? ImageUrl { get; set; }
+    public string ImageUrl { get; set; }
     
     public decimal Price { get; set; }
     

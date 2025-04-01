@@ -2617,13 +2617,12 @@ body > div.header-section.section > div > div > div {
   display: none; }
 .checkout-form input {
   width: 100%;
-  border: none;
   background-color: #ffffff;
   height: 40px;
   line-height: 24px;
   padding: 8px 15px;
   color: #7d7d7d;
-  font-size: 12px;
+  font-size: 16px;
   float: left; }
 .checkout-form select {
   -moz-appearance: none;
@@ -3333,6 +3332,12 @@ body > div.header-section.section > div > div > div {
 .beige-button {
   background-color: #CC9C6B;
   color: white;
+  cursor: pointer;
+}
+
+.beige-button:hover {
+  background-color: #a58257 !important;
+  color: white;
 }
 
 .grey-button {
@@ -3432,4 +3437,73 @@ body > div.header-section.section > div > div > div {
 .center-form {
   justify-content: center;
   margin-top: 120px;
+}
+
+
+td .custom-cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+td .custom-item-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+td .custom-quantity-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+td .custom-quantity-btn {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 6px;
+  margin: 0 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+td .custom-quantity-btn:hover {
+  background-color: #e0e0e0;
+}
+
+td .custom-quantity-input {
+  border: none;
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  height: 32px;
+}
+
+.order-inputs {
+  border: 1px solid #CC9C6B !important;
+}
+
+.input-filter {
+  font-size: 18px;
+}
+
+.navigation-item {
+  font-size: 13px !important;
+}
+
+.price-sorted-span {
+  font-size: 15px;
+}
+
+.price-sorter {
+  border: 1px solid #333;
 }

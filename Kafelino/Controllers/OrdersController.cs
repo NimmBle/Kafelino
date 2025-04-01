@@ -139,6 +139,7 @@ public class OrdersController : Controller
                 .Where(op => op.OrderId == order.Id)
                 .ToListAsync();
 
+            
             foreach (var orderProduct in orderProducts)
             {
                 var product = await this._context.Products
@@ -165,7 +166,7 @@ public class OrdersController : Controller
     }
     
     [HttpGet]
-        public async Task<IActionResult> Mine()
+    public async Task<IActionResult> Mine()
         {
             var user = await this._userManager.GetUserAsync(User);
 

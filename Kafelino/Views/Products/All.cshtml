@@ -165,48 +165,78 @@
                     <form method="get" asp-action="Filter" asp-controller="Products">
                         @if (this.User.IsInRole("Admin"))
                         {
-                            <a class="btn btn-filter grey-button mb-8" asp-controller="Products" asp-action="Create">Добави нов</a>
+                            <a class="btn btn-filter grey-button mb-8 w-100 mb-30" asp-controller="Products" asp-action="Create">Добави нов</a>
                         }
-                        <button type="submit" class="btn-filter">Филтрирай</button>
+                        <button type="submit" class="btn-filter w-100">Филтрирай</button>
+                        <h4 class="mt-30 mb-10">Опаковка:</h4>
                         <div class="form-group">
                             @foreach (var weight in Model.Filters.Weights)
                             {
                                 var isChecked = weight.Value == Model.Filters.Weight ? "checked" : "";
 
                                 <input type="radio" id="@weight" name="weight" value="@weight.Value" @isChecked/>
-                                <label for="@weight">@weight.Value@weight.Unit</label>
+                                <label class="input-filter mb-15" for="@weight">@weight.Value@weight.Unit</label>
                                 <br/>
                             }
                         </div>
+                        <hr>
+                        <h4 class="mb-10">Вкусови нотки:</h4>
                         <div class="form-group">
                             @foreach (var taste in Model.Filters.TasteNotes)
                             {
                                 var isChecked = taste.Name == Model.Filters.TasteNote ? "checked" : "";
 
                                 <input type="radio" id="taste" name="TasteNote" value="@taste.Name" @isChecked/>
-                                <label for="taste">@taste.Name</label>
+                                <label class="input-filter mb-15" for="taste">@taste.Name</label>
                                 <br/>
                             }
                         </div>
+                        <hr>
+                        <h4 class="mb-10">Марки:</h4>
                         <div class="form-group">
                             @foreach (var brand in Model.Filters.Brands)
                             {
                                 var isChecked = brand == Model.Filters.Brand ? "checked" : "";
 
                                 <input type="radio" id="brand" name="brand" value="@brand" @isChecked/>
-                                <label for="brand">@brand</label>
+                                <label class="input-filter mb-15" for="brand">@brand</label>
                                 <br/>
                             }
                         </div>
-                        <div class="form-group">
-                            <input type="number" value="@Model.Filters.MinPrice" name="minPrice" asp-for="@Model.Filters.MinPrice">
-                        </div>
-                        <div class="form-group">
-                            <input type="number" value="@Model.Filters.MaxPrice" name="maxPrice" asp-for="@Model.Filters.MaxPrice">
+                        <hr>
+                        <div class="form-group" style="display: flex; justify-content: space-around">
+                            <div class="row flex-column">
+                                <label for="minPrice">Мин. Цена</label>
+                                <input type="number" value="@Model.Filters.MinPrice" name="minPrice" id="minPrice" asp-for="@Model.Filters.MinPrice">
+                            </div>
+                            <div class="row flex-column">
+                                <label for="maxPrice">Макс. Цена</label>
+                                <input type="number" value="@Model.Filters.MaxPrice" name="maxPrice" id="maxPrice" asp-for="@Model.Filters.MaxPrice">
+                            </div>
                         </div>
                     </form>
                 </div>
-                <div class="col-lg-9 col-md-6 col-12 mb-60">
+                <div class="col-lg-9 col-md-6 col-12 mb-60 pl-5">
+                    <div class="row">
+                        <span style="font-size: 15px;" class=" ml-2 mr-2">Сортирай по цена:</span>
+                       
+                        <form method="get" asp-action="All">
+                            <select style="border: 1px solid #d3d3d3; font-size: 15px;" name="sortOrder" id="sortOrder">
+                                @if (@Model.sortedBy == "desc")
+                                {
+                                    <option value="desc">От висока към ниска</option>  
+                                    <option value="asc">От ниска към висока</option>
+                                }
+                                else
+                                {
+                                    <option value="asc">От ниска към висока</option>
+                                    <option value="desc">От висока към ниска</option>
+                                }
+                            </select>
+
+                            <button class="btn beige-button" type="submit">Сортирай</button>
+                        </form>
+                    </div>
                     <div class="row">
                         @foreach (var product in Model.Products)
                         {
@@ -234,7 +264,10 @@
                                             </div>
                                         </div>
                                         <div class="action-button fix">
-                                            <a class="add-to-cart-all" asp-action="AddToCart" asp-route-productId="@product.ProductId">Добави в количката</a>
+                                            @if (this.User.Identity.IsAuthenticated)
+                                            {
+                                                <a class="add-to-cart-all" asp-action="AddToCart" asp-route-productId="@product.ProductId">Добави в количката</a>
+                                            }
                                             @if (this.User.IsInRole("Admin"))
                                             {
                                                 <a class="edit-product-button" asp-action="Edit" asp-route-id="@product.ProductId">Редактирай</a>
