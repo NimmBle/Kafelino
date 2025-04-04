@@ -6,30 +6,29 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Създай нова нотка</h1>
+<div class="container mt-160 mb-160">
+    <h1>Създай нова нотка</h1>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Съзадаване" class="btn beige-button mt-4" />
+                </div>
+            </form>
+        </div>
+    </div>
 
-<h4>Вкусови нотки</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create" enctype="multipart/form-data">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary mt-4" />
-            </div>
-        </form>
+    <div>
+        <a asp-action="All">Към всички</a>
     </div>
 </div>
-
-<div>
-    <a asp-action="All">Към всички</a>
-</div>
-
 <script>
     $(document).ready(function() {
         $(".js-example-basic-multiple").select2(); // Initialize Select2 if used

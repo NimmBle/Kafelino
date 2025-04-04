@@ -1,0 +1,44 @@
+<div id="main-wrapper" class="section mt-120">
+    <h2 class="text-center mb-30">Свържи се с нас!</h2>
+    <!-- Contact Section Start-->
+    <div class="contact-section section bg-white">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-10 col-12 ml-auto mr-auto">
+
+                    <div class="contact-wrapper">
+                        <div class="row">
+
+                            <div class="contact-info col-lg-5 col-12">
+                                <h4 class="title">Информация за контакт</h4>
+                                <p>Чувствай се свободен да ни пишеш по всяко едно време по какъвто и да е въпрос. Нашият екип ще ти върне отговор възможно най-бързо!</p>
+                                <ul>
+                                    <li><span>Адрес:</span>ул. Сан Стефано №1</li>
+                                    <li><span>Телефон:</span> +359 87 878 878</li>
+                                    <li><span>Имейл:</span> admin@kafelino.com</li>
+                                </ul>
+                            </div>
+                            <div class="contact-form col-lg-7 col-12">
+                                <h4 class="title">Изпрати своето съобщение</h4>
+                                <form id="contact-form" method="post" asp-action="SendEmail">
+                                    <input type="text" name="name" placeholder="Име">
+                                    <input type="email" name="email" placeholder="Имейл">
+                                    <textarea name="message" placeholder="Съобшение"></textarea>
+                                    <input type="submit" value="Изпрати">
+                                </form>
+                                <p class="form-messege"></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div><!-- Contact Section End-->
+
+    <!-- Contact Map -->
+    <div id="contact-map"></div>
+</div>

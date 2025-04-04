@@ -3507,3 +3507,7 @@ td .custom-quantity-input {
 .price-sorter {
   border: 1px solid #333;
 }
+
+.meanmenu-reveal {
+  right: 0 !important;
+  left: auto !important; }

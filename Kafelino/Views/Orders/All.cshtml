@@ -25,6 +25,8 @@
                                 <th>Тел. номер</th>
                                 <th>Адрес</th>
                                 <th>Продукти</th>
+                                <th>Дата на поръчване</th>
+                                <th>Дата на доставка</th>
                                 <th>Общо</th>
                             </tr>
                             </thead>
@@ -42,6 +44,8 @@
                                             <p>@product.Name x @product.Quantity</p>
                                         }
                                     </td>
+                                    <td>@order.CreatedOnDate</td>
+                                    <td>@order.DeliveryDate</td>
                                     <td>@order.TotalSum лв.</td>
                                 </tr>
                             }

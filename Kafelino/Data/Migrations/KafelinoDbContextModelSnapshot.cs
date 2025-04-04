@@ -52,6 +52,12 @@ namespace Kafelino.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateOnly>("CreatedOnDate")
+                        .HasColumnType("date");
+
+                    b.Property<DateOnly>("DeliveryDate")
+                        .HasColumnType("date");
+
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -146,7 +152,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 1,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3631),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8162),
                             Description = "Тази изключителна партида Гейша идва от прочутата ферма Volcán Azul, която редовно се отличава като победител в конкурса Cup of Excellence Costa Rica. Обработена чрез натурален метод, тази партида разкрива елегантността и сложността, които правят Гейша толкова ценен сорт. Ароматът е фин и цветен, водещ към живи вкусове на жасмин и сочна папая. Ябълково-цитрусова киселинност придава свеж баланс, докато естествената сладост се запазва дълго, оставяйки изтънчен и продължителен вкус на кафява захар.",
                             ImageUrl = "product-1.webp",
                             IsDeleted = false,
@@ -159,7 +165,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 2,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3700),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8249),
                             Description = "Тази уникална партида е резултат от иновативния подход на Хайро Арсила, който използва плодова ферментация за обогатяване на вкусовия профил. Кафето впечатлява с нотки на праскова, кокос и ванилия, създавайки комплексен и запомнящ се вкус.",
                             ImageUrl = "product-2.webp",
                             IsDeleted = false,
@@ -172,7 +178,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 3,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3702),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8251),
                             Description = "Отгледано в региона Уиля, Колумбия, това кафе от сорта Таби предлага богат вкус с изразени нотки на боровинки, грозде и натурален шоколад. Идеално за любителите на плодови и сладки профили.",
                             ImageUrl = "product-3.webp",
                             IsDeleted = false,
@@ -185,7 +191,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 4,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3704),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8254),
                             Description = "Тази партида от региона Гуджи в Етиопия се отличава с флорални аромати и вкусове на жасмин, праскова и карамел. Перфектен избор за тези, които търсят елегантно и балансирано кафе.",
                             ImageUrl = "product-4.webp",
                             IsDeleted = false,
@@ -198,7 +204,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 5,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3706),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8257),
                             Description = "Кафе от региона Матагалпа в Никарагуа, което впечатлява с плътно тяло и вкусови нотки на карамел, зряла череша и черен чай.",
                             ImageUrl = "product-5.webp",
                             IsDeleted = false,
@@ -211,7 +217,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 6,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3708),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8259),
                             Description = "Традиционно кенийско кафе с интензивен аромат и вкусове на касис, цитрусови плодове и черен чай. Отличен избор за филтърно приготвяне.",
                             ImageUrl = "product-6.webp",
                             IsDeleted = false,
@@ -224,7 +230,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 7,
                             Brand = "BUGs",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3709),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8425),
                             Description = "Кафе от планините на Гватемала с комплексен профил и вкусове на какао, карамел и портокалова кора.",
                             ImageUrl = "product-7.webp",
                             IsDeleted = false,
@@ -237,7 +243,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 8,
                             Brand = "BUGs",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3711),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8428),
                             Description = "Традиционно бразилско кафе със сладък и балансиран вкус на шоколад, лешник и карамел. Перфектно за еспресо.",
                             ImageUrl = "product-8.webp",
                             IsDeleted = false,
@@ -250,7 +256,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 9,
                             Brand = "BUGs",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3713),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8431),
                             Description = "Легендарно кафе от региона Йиргачеф в Етиопия, което предлага флорални нотки, цитрусови плодове и медена сладост.",
                             ImageUrl = "product-9.webp",
                             IsDeleted = false,
@@ -263,7 +269,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 10,
                             Brand = "BUGs",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3715),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8433),
                             Description = "Плодово и сладко кафе с нотки на сушена слива, лешник и мед. Един от най-добрите примери за африканско кафе.",
                             ImageUrl = "product-10.webp",
                             IsDeleted = false,
@@ -276,7 +282,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 11,
                             Brand = "BUGs",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3716),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8436),
                             Description = "Едно от най-изисканите кафета в света – Панамската Гейша от региона Бокете е известна със своите интензивни флорални аромати, цитрусови нотки и копринена текстура. Сладостта и продължителният послевкус правят това кафе истинско удоволствие.",
                             ImageUrl = "product-11.webp",
                             IsDeleted = false,
@@ -289,7 +295,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 12,
                             Brand = "Sparrows",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3718),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8438),
                             Description = "Кафе от региона Гайо в Суматра, което предлага пикантни и земни нотки с намек за канела, тъмен шоколад и индийско орехче. Балансирано тяло и дълъг, сладък послевкус.",
                             ImageUrl = "product-12.webp",
                             IsDeleted = false,
@@ -302,7 +308,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 13,
                             Brand = "Methodical",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3720),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8441),
                             Description = "Класическо йеменско кафе с дълбок профил – нотки на тъмен шоколад, черен чай и сушени плодове. Истинско историческо кафе с автентичен вкус.",
                             ImageUrl = "product-13.webp",
                             IsDeleted = false,
@@ -315,7 +321,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 14,
                             Brand = "Huckleberry",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3722),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8443),
                             Description = "Уникално кафе от планините на Уганда със сочен плодов профил и нотки на кайсия, шоколад и карамфил. Отличава се със свежа киселинност и кремообразно тяло.",
                             ImageUrl = "product-14.webp",
                             IsDeleted = false,
@@ -328,7 +334,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 15,
                             Brand = "Atomic",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3724),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8445),
                             Description = "Отгледано в региона Маркала, това кафе предлага приятен баланс между сладост и киселинност, с нотки на мед, орех и млечен шоколад.",
                             ImageUrl = "product-15.webp",
                             IsDeleted = false,
@@ -341,7 +347,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 16,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3725),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8448),
                             Description = "Кафе от региона Серрадо в Бразилия със сладък и плътен профил. Вкусове на лешник, шоколад и карамел правят това кафе отличен избор за еспресо.",
                             ImageUrl = "product-16.webp",
                             IsDeleted = false,
@@ -354,7 +360,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 17,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3797),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8450),
                             Description = "Средно изпечено перуанско кафе със сладък и мек вкус. Нотки на тъмен шоколад, бадем и сладка череша. Подходящо за всички методи на приготвяне.",
                             ImageUrl = "product-17.webp",
                             IsDeleted = false,
@@ -367,7 +373,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 18,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3799),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8452),
                             Description = "Кафе от един от най-добрите райони в Коста Рика, отличаващо се с карамелена сладост, нотки на ванилия и цитрусово усещане. Перфектно за филтърно кафе.",
                             ImageUrl = "product-18.webp",
                             IsDeleted = false,
@@ -380,7 +386,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 19,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3801),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8455),
                             Description = "Фина селекция от сорта Пакамаара, отличаваща се с плодова сладост и нотки на зелена ябълка, мед и лимон. Изключително комплексно и балансирано кафе.",
                             ImageUrl = "product-19.webp",
                             IsDeleted = false,
@@ -393,7 +399,7 @@ namespace Kafelino.Data.Migrations
                         {
                             ProductId = 20,
                             Brand = "KOMETA",
-                            CreatedOn = new DateTime(2025, 4, 1, 21, 43, 59, 297, DateTimeKind.Local).AddTicks(3803),
+                            CreatedOn = new DateTime(2025, 4, 4, 14, 3, 45, 393, DateTimeKind.Local).AddTicks(8457),
                             Description = "Високопланинско кафе с богата киселинност и сложен ароматен профил. Нотки на кайсия, мед и черен чай го правят предпочитан избор за филтърно кафе.",
                             ImageUrl = "product-20.webp",
                             IsDeleted = false,
@@ -920,9 +926,9 @@ namespace Kafelino.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "d11aca42-5c31-4970-b684-05e8ce5b35b0",
+                            Id = "410912f8-df9a-436b-aea0-89c8653eb959",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "e68ead61-da33-4a25-9fde-095045245e01",
+                            ConcurrencyStamp = "b729a2af-1bf7-4fe3-abaa-05836e70a818",
                             Email = "admin@kafelino.com",
                             EmailConfirmed = true,
                             FirstName = "Иван",
@@ -930,17 +936,17 @@ namespace Kafelino.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@KAFELINO.COM",
                             NormalizedUserName = "ADMIN@KAFELINO.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDjG8bxOXMOI1ilPmTrYMyW/eg9OSWxjAJccT3dxV75vW83jEJrGw9BZfOC9M120hQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEM0hYTc7NrOTYy1279Wdw4ORlXqSJmQzPOE5RQI6ehKo74oLwbOSHEV1vJBu2f8Kwg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "41383756-2375-4744-ba30-4dece30c6f96",
+                            SecurityStamp = "de541705-ddcd-40a1-a367-03dd5ebd3754",
                             TwoFactorEnabled = false,
                             UserName = "admin@kafelino.com"
                         },
                         new
                         {
-                            Id = "d39dfee2-14be-41ca-89a8-e9fe57869106",
+                            Id = "2af3e2a3-2603-4852-a316-c61e6cf8ae33",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ad115563-f339-4457-8720-91b521795b05",
+                            ConcurrencyStamp = "e3ed31b9-928b-4f7b-8290-707e019107d8",
                             Email = "user@kafelino.com",
                             EmailConfirmed = true,
                             FirstName = "Михаил",
@@ -948,9 +954,9 @@ namespace Kafelino.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@KAFELINO.COM",
                             NormalizedUserName = "USER@KAFELINO.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEALnR82wxRUljSFH58sLk1YlrrGsNVDDc29igO13DfROsBbrp94/JBE/eyZP43uwqQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGjZn+HlwFUIWFFGZv1gtXdGJtfZjvfxrvwU6xwOkjRJ7kUR/G9V+BFQarSAEMIiHw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "e854f777-e0f5-4956-89d7-cdd31f08439f",
+                            SecurityStamp = "b2e8e7aa-2bb2-4f6c-ba66-2d63b311a1de",
                             TwoFactorEnabled = false,
                             UserName = "user@kafelino.com"
                         });
@@ -1031,8 +1037,8 @@ namespace Kafelino.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "c20d752f-fdbf-4dee-bf4d-a74884544984",
-                            ConcurrencyStamp = "c20d752f-fdbf-4dee-bf4d-a74884544984",
+                            Id = "36e0b632-b0dd-4c15-9d9d-ddf470f37c7e",
+                            ConcurrencyStamp = "36e0b632-b0dd-4c15-9d9d-ddf470f37c7e",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -1129,8 +1135,8 @@ namespace Kafelino.Data.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "d11aca42-5c31-4970-b684-05e8ce5b35b0",
-                            RoleId = "c20d752f-fdbf-4dee-bf4d-a74884544984"
+                            UserId = "410912f8-df9a-436b-aea0-89c8653eb959",
+                            RoleId = "36e0b632-b0dd-4c15-9d9d-ddf470f37c7e"
                         });
                 });
 

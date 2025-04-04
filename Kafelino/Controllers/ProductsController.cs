@@ -145,6 +145,7 @@ namespace Kafelino.Controllers
                     Price = p.Price,
                     Quantity = p.Quantity,
                     Brand = p.Brand,
+                    CreatedOn = p.CreatedOn,
                     Weight = p.Weight,
                     TasteNotes = p.TasteNotes,
                 })

@@ -38,16 +38,24 @@ public class WeightsController(KafelinoDbContext _context) : Controller
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Create(WeightViewModel viewModel)
     {
-        var weight = new Weight
+        if (ModelState.IsValid)
         {
-            Value = viewModel.Value,
-            Unit = viewModel.Unit,
-        };
+           
+            var weight = new Weight
+            {
+                Value = viewModel.Value,
+                Unit = viewModel.Unit,
+            };
         
-        _context.Weights.Add(weight);
-        await _context.SaveChangesAsync();
+            _context.Weights.Add(weight);
+            await _context.SaveChangesAsync();
         
-        return RedirectToAction(nameof(All));
+            return RedirectToAction(nameof(All)); 
+        }
+        else
+        {
+            return View(viewModel);
+        }
     }
     
     [HttpGet]
@@ -71,16 +79,23 @@ public class WeightsController(KafelinoDbContext _context) : Controller
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Edit(WeightViewModel viewModel)
     {
-        var weight = await _context.Weights
-            .FirstOrDefaultAsync(w => w.WeightId == viewModel.WeightId);
+        if (ModelState.IsValid)
+        {
+            var weight = await _context.Weights
+                .FirstOrDefaultAsync(w => w.WeightId == viewModel.WeightId);
         
-        weight.Value = viewModel.Value;
-        weight.Unit = viewModel.Unit;
+            weight.Value = viewModel.Value;
+            weight.Unit = viewModel.Unit;
         
-        _context.Weights.Update(weight);
-        await _context.SaveChangesAsync();
+            _context.Weights.Update(weight);
+            await _context.SaveChangesAsync();
         
-        return RedirectToAction(nameof(All));
+            return RedirectToAction(nameof(All));
+        }
+        else
+        {
+            return View(viewModel);
+        }
     }
     
     [HttpGet]

@@ -6,34 +6,36 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Вкусови нотки</h1>
+<div class="container">
+    <h1 class=" mt-120">Вкусови нотки</h1>
 
-@if (this.User.IsInRole("Admin"))
-{
-    <p>
-        <a asp-action="Create">Добави нова нотка</a>
-    </p>
-}
-<table class="table">
-    <thead>
+    @if (this.User.IsInRole("Admin"))
+    {
+        <p>
+            <a class="btn beige-button" asp-action="Create">Добави нова нотка</a>
+        </p>
+    }
+    <table class="table">
+        <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
             <th></th>
-        </tr>   
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.TasteNoteId">Edit</a> |
-                <a asp-action="Delete" asp-route-id="@item.TasteNoteId">Delete</a>
-            </td>
         </tr>
-}
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.TasteNoteId">Редактирай</a> |
+                    <a asp-action="Delete" asp-route-id="@item.TasteNoteId">Изтрий</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

@@ -18,10 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Migrations\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-grid.css" />
     <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-grid.css.map" />
     <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\css\coreui-grid.min.css" />
@@ -86,6 +82,10 @@
     <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\coreui.js.map" />
     <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\coreui.min.js" />
     <_ContentIncludedByDefault Remove="wwwroot\lib\coreui\js\coreui.min.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Migrations\" />
   </ItemGroup>
 
 </Project>

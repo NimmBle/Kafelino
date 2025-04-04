@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace Kafelino.Models;
@@ -9,5 +10,6 @@ public class TasteNoteViewModel
     [Required(ErrorMessage = "Полето е задължително.")]
     [MinLength(2, ErrorMessage = "Въведи поне 2 символа.")]
     [MaxLength(50, ErrorMessage = "Въведи не повече от 50 символа.")]
+    [DisplayName("Име")]
     public string Name { get; set; }
 }

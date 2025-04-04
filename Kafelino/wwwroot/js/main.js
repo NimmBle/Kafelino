@@ -48,8 +48,8 @@ windows.on('resize', function(){
 $('#main-menu').meanmenu({
     meanScreenWidth: '767',
     meanMenuContainer: '.mobile-menu',
-    meanMenuClose: '<i class="ion-android-close"></i>',
-    meanMenuOpen: '<i class="ion-navicon"></i>',
+    meanMenuClose: '<i class="fa-solid fa-xmark"></i>',
+    meanMenuOpen: '<i class="fa-solid fa-bars"></i>',
     meanRevealPosition: 'left',
     meanMenuCloseSize: '30px',
 });

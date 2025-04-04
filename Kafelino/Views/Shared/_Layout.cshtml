@@ -136,11 +136,11 @@
                                     </ul>
                                 </li>
                             }
-                            <li><a href="about.html">За нас</a></li>
-                            <li><a href="contact.html">Контакти</a></li>
+                            <li><a asp-controller="Home" asp-action="ContactUs">Контакти</a></li>
                         </ul>
                     </nav>
-                    <div class="mobile-menu section d-md-none"></div>
+                    <div class="mobile-menu section d-md-none">
+                    </div>
                     <div class="account-menu">
                         <ul>
                             @if (!this.User.Identity.IsAuthenticated) { 
@@ -258,6 +258,8 @@
     <script src="~/js/main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/e4fff36fb7.js" crossorigin="anonymous"></script>
     
     @await RenderSectionAsync("Scripts", required: false)
 </body>
